@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crie a sua conta no PipocaDigital e comece a explorar o catálogo de filmes.">
+    <meta name="keywords" content="criar conta, registo, pipocadigital">
+    <title>Criar Conta - PipocaDigital</title>
+    <link rel="stylesheet" href="/Static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="components.js"></script>
+    <script>injectHeader();</script>
+
+    <div class="head">
+            <h1><span class="linha">—</span>CRIAR CONTA<span class="linha">—</span></h1>
+    </div>
+
+    <div class="login-container">
+    <form id="registerForm">
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <button type="submit" class="btn-balde">Criar Conta</button>
+    </form>
+    <p id="message"></p>
+    </div>
+
+    <script>
+    document.getElementById('registerForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const msg = document.getElementById('message');
+        msg.textContent = 'A registar...';
+        try {
+            const res = await fetch('/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ nome, email, password })
+            });
+            const data = await res.json();
+            msg.textContent = data.message;
+            msg.style.color = res.ok ? 'green' : 'red';
+        } catch {
+            msg.textContent = 'Erro de ligação ao servidor.';
+            msg.style.color = 'red';
+        }
+    });
+    </script>
+
+    <script>injectFooter();</script>
+</body>
+</html>

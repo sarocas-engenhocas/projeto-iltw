@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PipocaDigital - O seu catálogo de filmes online. Explore destaques, géneros e produtoras.">
+    <meta name="keywords" content="filmes, catálogo, cinema, pipocadigital, géneros, produtoras">
+    <title>PipocaDigital</title>
+    <link rel="stylesheet" href="/Static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="components.js"></script>
+    <script>injectHeader();</script>
+
+    <div class="welcome">
+        <img src="Static/pics/WelcomeBanner.png" alt="Bem-vindo ao PipocaDigital - Catálogo de Filmes" class="imagem-bemvindo">
+    </div>
+
+    <div class="destaques">
+        <h1><span class="linha">—</span>DESTAQUES<span class="linha">—</span></h1>
+    </div>
+
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+            <img src="Static/pics/arrow-left.png" alt="">
+        </button>
+
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" id="img1" src="" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27300%27 height=%27450%27%3E%3Crect fill=%27%23ddd%27 width=%27300%27 height=%27450%27/%3E%3Ctext fill=%27%23999%27 font-size=%2720%27 text-anchor=%27middle%27 x=%27150%27 y=%27225%27%3ESem poster%3C/text%3E%3C/svg%3E'">
+                    <div class="carousel__caption">
+                        <h1 id="title1"></h1>
+                        <p id="year1"></p>
+                        <p id="genre1"></p>  
+                        <p id="producer1"></p>
+                        <p id="rating1"></p>
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" id="img2" src="" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27300%27 height=%27450%27%3E%3Crect fill=%27%23ddd%27 width=%27300%27 height=%27450%27/%3E%3Ctext fill=%27%23999%27 font-size=%2720%27 text-anchor=%27middle%27 x=%27150%27 y=%27225%27%3ESem poster%3C/text%3E%3C/svg%3E'">
+                    <div class="carousel__caption">
+                        <h1 id="title2"></h1>
+                        <p id="year2"></p>
+                        <p id="genre2"></p>
+                        <p id="producer2"></p>
+                        <p id="rating2"></p>
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" id="img3" src="" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27300%27 height=%27450%27%3E%3Crect fill=%27%23ddd%27 width=%27300%27 height=%27450%27/%3E%3Ctext fill=%27%23999%27 font-size=%2720%27 text-anchor=%27middle%27 x=%27150%27 y=%27225%27%3ESem poster%3C/text%3E%3C/svg%3E'">
+                    <div class="carousel__caption">
+                        <h1 id="title3"></h1>   
+                        <p id="year3"></p>
+                        <p id="genre3"></p>
+                        <p id="producer3"></p>
+                        <p id="rating3"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <button class="carousel__button carousel__button--right">
+            <img src="Static/pics/arrow-right.png" alt="">
+        </button>
+
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>  
+           
+    </div>
+
+    <script>injectFooter();</script>
+
+
+<script src="index.js"></script>
+</body>
+</html>

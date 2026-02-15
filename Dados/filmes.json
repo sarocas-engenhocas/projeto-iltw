@@ -1,0 +1,1005 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Inception",
+      "ano": 2010,
+      "genero": "Sci-Fi",
+      "produtora": "Warner Bros",
+      "rating": 8.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
+      "sinopse": "Dom Cobb é um ladrão especializado em extrair segredos do subconsciente durante o sono. Quando recebe a oportunidade de limpar o seu passado, aceita realizar a tarefa impossível de plantar uma ideia na mente de alguém. À medida que a equipa mergulha em camadas cada vez mais profundas de sonhos, a fronteira entre realidade e ilusão começa a desmoronar, forçando Cobb a confrontar memórias dolorosas que ameaçam destruir a missão."
+    },
+    {
+      "id": 2,
+      "titulo": "Interstellar",
+      "ano": 2014,
+      "genero": "Sci-Fi",
+      "produtora": "Paramount",
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_.jpg",
+      "sinopse": "Num futuro em que a Terra se torna inabitável, um grupo de astronautas embarca numa missão através de um buraco de minhoca em busca de um novo lar para a humanidade. Cooper, um ex-piloto e agricultor, enfrenta a difícil escolha entre salvar o futuro da espécie humana e permanecer com a sua família. A viagem desafia as leis da física, do tempo e das emoções, levando-o a descobrir até onde o amor pode atravessar dimensões."
+    },
+    {
+      "id": 3,
+      "titulo": "The Dark Knight",
+      "ano": 2008,
+      "genero": "Action",
+      "produtora": "Warner Bros",
+      "rating": 9.0,
+      "poster": "https://m.media-amazon.com/images/I/81sz8-+EwdL._SL1500_.jpg",
+      "sinopse": "Batman enfrenta o seu maior desafio quando o Joker surge em Gotham, espalhando caos e destruindo qualquer noção de ordem. Enquanto o Cavaleiro das Trevas tenta proteger a cidade, vê-se forçado a questionar os seus próprios limites morais. A batalha entre os dois transforma-se num jogo psicológico intenso, onde cada decisão tem consequências devastadoras para os inocentes e para o próprio Bruce Wayne."
+    },
+    {
+      "id": 4,
+      "titulo": "The Matrix",
+      "ano": 1999,
+      "genero": "Sci-Fi",
+      "produtora": "Warner Bros",
+      "rating": 8.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Thomas Anderson, um hacker conhecido como Neo, descobre que o mundo em que vive é uma simulação criada por máquinas para controlar a humanidade. Guiado por Morpheus e Trinity, Neo embarca numa jornada para despertar e compreender o seu papel na luta pela libertação humana. À medida que enfrenta agentes implacáveis e verdades perturbadoras, percebe que a realidade é muito mais complexa do que imaginava."
+    },
+    {
+      "id": 5,
+      "titulo": "Avatar",
+      "ano": 2009,
+      "genero": "Sci-Fi",
+      "produtora": "20th Century Fox",
+      "rating": 7.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Jake Sully, um ex-fuzileiro paraplégico, é enviado ao planeta Pandora para participar no programa Avatar, que lhe permite controlar um corpo alienígena. Enquanto se infiltra na tribo Na'vi, Jake começa a questionar a missão humana de exploração e destruição. Dividido entre dois mundos, ele precisa escolher entre a lealdade ao seu povo e a defesa de Pandora, numa batalha épica pelo futuro do planeta."
+    },
+    {
+      "id": 6,
+      "titulo": "Titanic",
+      "ano": 1997,
+      "genero": "Romance",
+      "produtora": "Paramount",
+      "rating": 7.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "A bordo do luxuoso RMS Titanic, Rose, uma jovem aristocrata, sente-se presa à sua vida controlada e ao noivado forçado. Quando conhece Jack, um artista livre e aventureiro, nasce entre eles um amor improvável. Mas a viagem transforma-se em tragédia quando o navio colide com um iceberg, obrigando ambos a lutar pela sobrevivência num dos desastres marítimos mais marcantes da história."
+    },
+    {
+      "id": 7,
+      "titulo": "Gladiator",
+      "ano": 2000,
+      "genero": "Action",
+      "produtora": "DreamWorks",
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTQ2NzI0ODc5MV5BMl5BanBnXkFtZTcwMTA0MTk3OA@@._V1_.jpg",
+      "sinopse": "Maximus, um general romano leal, é traído pelo filho corrupto do imperador e condenado à escravidão. Forçado a tornar-se gladiador, ele ascende nas arenas enquanto alimenta o desejo de vingança pela morte da sua família. A sua luta transforma-se num símbolo de resistência contra a tirania, culminando num confronto épico que marcará o destino de Roma."
+    },
+    {
+      "id": 8,
+      "titulo": "The Godfather",
+      "ano": 1972,
+      "genero": "Crime",
+      "produtora": "Paramount",
+      "rating": 9.2,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjQxZmFjNzItYWNmYS00ZjIzLTlkYTktZTQyM2JhMzcwNWVjXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "A história da família Corleone acompanha a transição de poder dentro de uma das mais influentes máfias italianas nos Estados Unidos. Quando Don Vito Corleone é atacado, o seu filho Michael, inicialmente afastado do mundo do crime, é forçado a assumir responsabilidades. À medida que se envolve mais profundamente, Michael transforma-se num líder implacável, sacrificando a sua própria humanidade para proteger a família."
+    },
+    {
+      "id": 9,
+      "titulo": "The Godfather Part II",
+      "ano": 1974,
+      "genero": "Crime",
+      "produtora": "Paramount",
+      "rating": 9.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDIxMzBlZDktZjMxNy00ZGI4LTgxNDEtYWRlNzRjMjJmOGQ1XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "O filme alterna entre a ascensão de Vito Corleone como jovem imigrante que constrói o seu império criminal e o reinado de Michael Corleone, agora chefe da família. Enquanto Michael tenta expandir os negócios e manter o poder, enfrenta traições internas e conflitos pessoais que ameaçam destruir tudo o que o pai construiu. A narrativa revela o preço devastador do poder e da ambição."
+    },
+    {
+      "id": 10,
+      "titulo": "Pulp Fiction",
+      "ano": 1994,
+      "genero": "Crime",
+      "produtora": "Miramax",
+      "rating": 8.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Várias histórias interligadas exploram o submundo criminal de Los Angeles, acompanhando assassinos profissionais, um pugilista em fuga e um casal de assaltantes. Com diálogos marcantes e narrativa não linear, o filme revela momentos de tensão, humor negro e violência estilizada. Cada personagem enfrenta escolhas inesperadas que os levam a destinos tão caóticos quanto memoráveis."
+    },
+    {
+    "id": 11,
+      "titulo": "Fight Club",
+      "ano": 1999,
+      "genero": "Drama",
+      "produtora": "20th Century Fox",
+      "rating": 8.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Um homem insatisfeito com a sua vida corporativa encontra em Tyler Durden, um vendedor carismático e anárquico, uma nova forma de libertação. Juntos, criam um clube secreto onde homens descarregam frustrações através de combates físicos. À medida que o clube cresce e se transforma num movimento radical, o protagonista vê a sua identidade e sanidade desmoronarem, confrontando verdades perturbadoras sobre si próprio."
+    },
+    {
+      "id": 12,
+      "titulo": "Forrest Gump",
+      "ano": 1994,
+      "genero": "Drama",
+      "produtora": "Paramount",
+      "rating": 8.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Forrest Gump, um homem com um coração puro e uma visão simples da vida, acaba por se envolver em alguns dos momentos mais marcantes da história americana. Enquanto procura o seu lugar no mundo, mantém sempre o amor inabalável pela sua amiga de infância, Jenny. Através de conquistas inesperadas e desafios emocionais, Forrest mostra que a inocência e a bondade podem transformar vidas."
+    },
+    {
+      "id": 13,
+      "titulo": "The Shawshank Redemption",
+      "ano": 1994,
+      "genero": "Drama",
+      "produtora": "Columbia",
+      "rating": 9.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Andy Dufresne, um banqueiro injustamente condenado por homicídio, é enviado para a prisão de Shawshank, onde enfrenta brutalidade, corrupção e desespero. Com o tempo, forma uma amizade profunda com Red, um preso experiente. Através de inteligência, paciência e esperança inabalável, Andy transforma a vida dos que o rodeiam e planeia uma das fugas mais icónicas da história do cinema."
+    },
+    {
+      "id": 14,
+      "titulo": "The Lord of the Rings: The Fellowship of the Ring",
+      "ano": 2001,
+      "genero": "Fantasy",
+      "produtora": "New Line Cinema",
+      "rating": 8.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BOWRiODAyZmYtYWU1My00YmY0LWI2MTQtODgyNDcyNzhmZjg0XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Frodo Baggins recebe a missão de destruir o Um Anel, um artefacto maligno capaz de corromper qualquer ser. Acompanhado por uma irmandade formada por hobbits, humanos, um mago, um elfo e um anão, embarca numa jornada épica pela Terra Média. Enquanto forças sombrias se aproximam, a irmandade enfrenta perigos mortais que testam a coragem e a união de todos."
+    },
+    {
+      "id": 15,
+      "titulo": "The Lord of the Rings: The Two Towers",
+      "ano": 2002,
+      "genero": "Fantasy",
+      "produtora": "New Line Cinema",
+      "rating": 8.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZTQ3NTIxM2YtMzVlMy00OTk0LThhMGEtNjdlMTZjNzU0M2U1XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Separados após a queda da irmandade, Frodo e Sam continuam a sua jornada rumo a Mordor guiados por Gollum, enquanto Aragorn, Legolas e Gimli procuram resgatar os hobbits capturados. A guerra aproxima-se e Rohan torna-se o palco de uma das batalhas mais lendárias da Terra Média. Cada grupo enfrenta desafios que moldam o destino da missão e do próprio mundo."
+    },
+    {
+      "id": 16,
+      "titulo": "The Lord of the Rings: The Return of the King",
+      "ano": 2003,
+      "genero": "Fantasy",
+      "produtora": "New Line Cinema",
+      "rating": 9.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTEyOWI3NjYtZDYwNy00MWEzLWEyYzItOTVkNTcyNGJjMzk5XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Com a guerra a devastar a Terra Média, Aragorn assume o seu destino como rei enquanto lidera os povos livres contra as forças de Sauron. Frodo e Sam aproximam-se do Monte da Perdição, enfrentando exaustão, traição e o peso crescente do Anel. A batalha final determinará o futuro de todos, culminando num dos finais mais emocionantes e grandiosos do cinema."
+    },
+    {
+      "id": 17,
+      "titulo": "Star Wars: A New Hope",
+      "ano": 1977,
+      "genero": "Sci-Fi",
+      "produtora": "Lucasfilm",
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2ZlYzNhMWUtODYwMS00MDQwLWFlYzctNDlkOThkOTFiY2ZkXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Luke Skywalker, um jovem agricultor, descobre uma mensagem que o leva a juntar-se à Rebelião contra o Império Galáctico. Guiado por Obi-Wan Kenobi e acompanhado por Han Solo, Leia e Chewbacca, Luke embarca numa missão para destruir a Estrela da Morte. A sua jornada marca o início de uma lenda que mudará o destino da galáxia."
+    },
+    {
+      "id": 18,
+      "titulo": "Star Wars: The Empire Strikes Back",
+      "ano": 1980,
+      "genero": "Sci-Fi",
+      "produtora": "Lucasfilm",
+      "rating": 8.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Após a destruição da Estrela da Morte, o Império lança um ataque devastador contra a Rebelião. Luke procura treinar com o Mestre Yoda enquanto Han e Leia fogem das forças imperiais. O confronto final entre Luke e Darth Vader revela uma verdade chocante que altera para sempre o rumo da saga."
+    },
+    {
+      "id": 19,
+      "titulo": "Star Wars: Return of the Jedi",
+      "ano": 1983,
+      "genero": "Sci-Fi",
+      "produtora": "Lucasfilm",
+      "rating": 8.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWEwOTI0MmUtMGNmNy00ODViLTlkZDQtZTg1YmQ3MDgyNTUzXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "A Rebelião prepara um ataque final contra o Império enquanto Luke tenta resgatar Darth Vader da escuridão. Com a construção de uma nova Estrela da Morte, o destino da galáxia depende da coragem dos heróis e da redenção de um pai. A batalha culmina num confronto emocional que encerra a trilogia original."
+    },
+    {
+      "id": 20,
+      "titulo": "Jurassic Park",
+      "ano": 1993,
+      "genero": "Adventure",
+      "produtora": "Universal",
+      "rating": 8.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_.jpg",
+      "sinopse": "Um milionário visionário cria um parque temático com dinossauros clonados, mas a segurança falha quando um sabotador desativa os sistemas. Presos na ilha, cientistas e visitantes lutam para sobreviver enquanto criaturas pré-históricas ganham liberdade. O desastre revela os perigos de brincar com a genética e desafiar as forças da natureza."
+    },
+    {
+      "id": 21,
+      "titulo": "The Lion King",
+      "ano": 1994,
+      "genero": "Animation",
+      "produtora": "Disney",
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Simba, um jovem leão destinado a tornar-se rei, vê a sua vida mudar drasticamente após a morte do pai, Mufasa, causada pela traição do seu tio Scar. Consumido pela culpa e manipulado a fugir, Simba cresce longe do seu reino até ser confrontado com o seu verdadeiro destino. Com a ajuda de amigos leais, ele regressa para enfrentar o passado e reclamar o lugar que lhe pertence na Pedra do Rei."
+    },
+    {
+      "id": 22,
+      "titulo": "Toy Story",
+      "ano": 1995,
+      "genero": "Animation",
+      "produtora": "Pixar",
+      "rating": 8.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Woody, o brinquedo favorito de Andy, vê a sua posição ameaçada quando Buzz Lightyear, um moderno patrulheiro espacial, chega ao quarto. A rivalidade inicial transforma-se numa improvável amizade quando ambos se perdem longe de casa e precisam trabalhar juntos para regressar antes da mudança da família. A aventura revela o verdadeiro significado de lealdade e companheirismo."
+    },
+    {
+      "id": 23,
+      "titulo": "Toy Story 2",
+      "ano": 1999,
+      "genero": "Animation",
+      "produtora": "Pixar",
+      "rating": 7.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzVmODlhMDEtY2YxZi00OTVjLTlkNTktN2Q2OTRlM2I4M2FhXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Quando Woody é raptado por um colecionador de brinquedos, descobre que faz parte de uma antiga série televisiva e que outros brinquedos dependem dele para serem preservados. Enquanto Buzz e os amigos organizam uma missão de resgate, Woody enfrenta o dilema entre regressar a Andy ou aceitar uma nova vida num museu. A aventura reforça os laços de amizade e o valor de ser amado por uma criança."
+    },
+    {
+      "id": 24,
+      "titulo": "Toy Story 3",
+      "ano": 2010,
+      "genero": "Animation",
+      "produtora": "Pixar",
+      "rating": 8.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_.jpg",
+      "sinopse": "Com Andy prestes a ir para a universidade, os brinquedos enfrentam um futuro incerto. Após um mal-entendido, acabam numa creche aparentemente acolhedora, mas governada por um urso tirânico. Woody tenta salvar os amigos enquanto todos lidam com o medo de serem esquecidos. A história culmina num dos momentos mais emocionantes da animação moderna, celebrando despedidas e novos começos."
+    },
+    {
+      "id": 25,
+      "titulo": "Shrek",
+      "ano": 2001,
+      "genero": "Animation",
+      "produtora": "DreamWorks",
+      "rating": 7.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2FkMTRkNTUtYTI0NC00ZjI4LWI5MzUtMDFmOGY0NmU2OGY1XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Shrek, um ogre solitário, vê a sua vida tranquila ser interrompida quando criaturas de contos de fadas invadem o seu pântano. Para recuperar a paz, aceita resgatar a princesa Fiona para o maléfico Lord Farquaad. Ao longo da jornada, Shrek descobre que Fiona guarda um segredo e que a verdadeira beleza está muito além das aparências. A aventura transforma-se numa história de amor e autoaceitação."
+    },
+    {
+      "id": 26,
+      "titulo": "Shrek 2",
+      "ano": 2004,
+      "genero": "Animation",
+      "produtora": "DreamWorks",
+      "rating": 7.2,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzNmNjQ1NmUtNzhiZS00YWE2LTg4N2ItZTA2ODdmOTMwOTQ1XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Após o casamento com Fiona, Shrek é convidado a conhecer os sogros no reino de Tão Tão Distante. A receção é tudo menos calorosa, especialmente quando o Rei e a Fada Madrinha tentam separar o casal. Entre poções mágicas, perseguições e revelações inesperadas, Shrek precisa provar que o amor verdadeiro supera qualquer transformação."
+    },
+    {
+      "id": 27,
+      "titulo": "Spider-Man",
+      "ano": 2002,
+      "genero": "Action",
+      "produtora": "Sony",
+      "rating": 7.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZWM0OWVmNTEtNWVkOS00MzgyLTkyMzgtMmE2ZTZiNjY4MmFiXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Peter Parker, um estudante tímido, ganha poderes extraordinários após ser mordido por uma aranha geneticamente modificada. Enquanto tenta equilibrar a vida pessoal com a responsabilidade de ser o Homem-Aranha, enfrenta o perigoso Duende Verde. A luta entre herói e vilão coloca em risco aqueles que Peter ama, levando-o a compreender o peso da frase: 'com grandes poderes vêm grandes responsabilidades'."
+    },
+    {
+      "id": 28,
+      "titulo": "Spider-Man 2",
+      "ano": 2004,
+      "genero": "Action",
+      "produtora": "Sony",
+      "rating": 7.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGQ0YTQyYTgtNWI2YS00NTE2LWJmNDItNTFlMTUwNmFlZTM0XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Peter Parker luta para conciliar a vida de super-herói com os desafios pessoais, incluindo o afastamento de Mary Jane e problemas financeiros. Quando o brilhante cientista Otto Octavius se transforma no perigoso Doutor Octopus, Peter precisa recuperar a confiança para salvar a cidade. O confronto leva-o a questionar sacrifícios e escolhas que definem o verdadeiro heroísmo."
+    },
+    {
+      "id": 29,
+      "titulo": "Spider-Man 3",
+      "ano": 2007,
+      "genero": "Action",
+      "produtora": "Sony",
+      "rating": 6.2,
+      "poster": "https://m.media-amazon.com/images/M/MV5BODE2NzNhMDctYjUzMC00Y2M5LWI2Y2EtODJkZTFjN2Y5ODlmXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Peter Parker enfrenta uma crise pessoal quando um simbionte alienígena amplifica o seu lado mais sombrio. Ao mesmo tempo, novos inimigos surgem, incluindo o Homem-Areia e Venom, enquanto a relação com Mary Jane se deteriora. Peter precisa confrontar os seus erros e aprender a perdoar para recuperar o equilíbrio e proteger aqueles que ama."
+    },
+    {
+      "id": 30,
+      "titulo": "Iron Man",
+      "ano": 2008,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_.jpg",
+      "sinopse": "Tony Stark, um génio bilionário e fabricante de armas, é capturado por terroristas e forçado a construir um míssil. Em vez disso, cria uma armadura improvisada que lhe permite escapar. De volta a casa, aperfeiçoa a tecnologia e decide usá-la para combater ameaças que ele próprio ajudou a criar. A transformação de Stark marca o nascimento do Homem de Ferro e o início de um novo tipo de herói."
+    },
+    {
+      "id": 31,
+      "titulo": "Iron Man 2",
+      "ano": 2010,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGY0NDAwMDItMTUxZC00OTI5LTlmYzktNGZmNTJiNjQ0MGVkXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Após revelar ao mundo que é o Homem de Ferro, Tony Stark enfrenta pressão do governo para entregar a sua tecnologia, enquanto a sua saúde se deteriora devido ao reator no peito. Um novo inimigo surge quando Ivan Vanko, motivado por vingança, cria a sua própria versão da armadura. Entre conflitos pessoais, políticos e tecnológicos, Tony precisa reinventar-se para proteger aqueles que ama e manter o legado que criou."
+    },
+    {
+      "id": 32,
+      "titulo": "Iron Man 3",
+      "ano": 2013,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIzMzAzMjQyM15BMl5BanBnXkFtZTcwNzM2NjcyOQ@@._V1_.jpg",
+      "sinopse": "Traumatizado pelos eventos de Nova Iorque, Tony Stark enfrenta ataques devastadores do terrorista conhecido como Mandarim. Sem a sua tecnologia habitual e forçado a agir sozinho, Tony investiga uma conspiração que envolve experiências biológicas instáveis. A jornada obriga-o a confrontar os seus medos mais profundos e a descobrir que o verdadeiro poder não está na armadura, mas no homem por trás dela."
+    },
+    {
+      "id": 33,
+      "titulo": "The Avengers",
+      "ano": 2012,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Quando Loki ameaça conquistar a Terra com a ajuda de um exército alienígena, Nick Fury reúne um grupo de heróis extraordinários: Iron Man, Captain America, Thor, Hulk, Black Widow e Hawkeye. Apesar das diferenças e conflitos internos, a equipa precisa aprender a trabalhar unida para enfrentar uma ameaça global. A batalha final em Nova Iorque marca o nascimento oficial dos Vingadores."
+    },
+    {
+      "id": 34,
+      "titulo": "Avengers: Age of Ultron",
+      "ano": 2015,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTdiMjI4ZGEtZWU0OC00N2RiLTkwNDgtMGU4Y2IxNmIwZjU1XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Na tentativa de criar um sistema de defesa global, Tony Stark e Bruce Banner acidentalmente dão vida a Ultron, uma inteligência artificial que decide que a paz só pode ser alcançada através da extinção humana. Os Vingadores enfrentam novos inimigos, incluindo os gémeos Wanda e Pietro Maximoff, enquanto lutam para impedir a destruição total. A batalha força a equipa a confrontar erros, medos e o peso das suas ações."
+    },
+    {
+      "id": 35,
+      "titulo": "Avengers: Infinity War",
+      "ano": 2018,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 8.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg",
+      "sinopse": "Thanos inicia a sua busca pelas Joias do Infinito, determinado a eliminar metade da vida no universo para restaurar o equilíbrio. Os Vingadores, divididos e enfraquecidos, unem forças com os Guardiões da Galáxia numa tentativa desesperada de impedir o titã louco. A batalha culmina num desfecho devastador que altera o destino de todos os heróis e deixa o universo em ruínas."
+    },
+    {
+      "id": 36,
+      "titulo": "Avengers: Endgame",
+      "ano": 2019,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 8.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWFlNDcyY2YtZmYwZS00NDM3LTgwNzAtZDNjODM5ZGQ3ZTU3XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Após o estalar de dedos de Thanos, os Vingadores sobreviventes enfrentam um mundo devastado. Determinados a reverter a tragédia, embarcam numa missão arriscada que envolve viagens no tempo e sacrifícios inimagináveis. A batalha final reúne heróis de todas as eras num confronto épico que encerra uma saga de mais de uma década, celebrando coragem, união e despedidas emocionantes."
+    },
+    {
+      "id": 37,
+      "titulo": "Black Panther",
+      "ano": 2018,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg",
+      "sinopse": "Após a morte do pai, T'Challa regressa a Wakanda para assumir o trono e o manto de Pantera Negra. No entanto, a chegada de Killmonger, um rival com laços ao passado da família, ameaça dividir o país e expor os seus segredos ao mundo. T'Challa precisa lutar não apenas pelo trono, mas pela identidade e futuro da sua nação tecnologicamente avançada."
+    },
+    {
+      "id": 38,
+      "titulo": "Doctor Strange",
+      "ano": 2016,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_.jpg",
+      "sinopse": "Stephen Strange, um neurocirurgião brilhante mas arrogante, perde a capacidade de operar após um acidente. Desesperado, viaja até ao Kamar-Taj, onde descobre um mundo de magia e dimensões alternativas. Enquanto aprende a dominar artes místicas, Strange enfrenta Kaecilius, um feiticeiro que ameaça entregar a Terra a uma entidade cósmica. A jornada transforma-o num dos protetores mais poderosos do planeta."
+    },
+    {
+      "id": 39,
+      "titulo": "Guardians of the Galaxy",
+      "ano": 2014,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BM2ZmNjQ2MzAtNDlhNi00MmQyLWJhZDMtNmJiMjFlOWY4MzcxXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Peter Quill, um aventureiro espacial, junta-se a um grupo improvável composto por Gamora, Drax, Rocket e Groot após roubar um artefacto cobiçado por Ronan, um guerreiro fanático. Apesar das diferenças, o grupo precisa unir-se para impedir que o objeto caia nas mãos erradas e destrua mundos inteiros. A missão transforma-os numa família disfuncional, mas poderosa."
+    },
+    {
+      "id": 40,
+      "titulo": "Guardians of the Galaxy Vol. 2",
+      "ano": 2017,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Os Guardiões enfrentam novos desafios quando Peter Quill encontra o seu pai biológico, Ego, um ser celestial com planos ambíguos. Enquanto segredos do passado vêm à tona, a equipa precisa lidar com conflitos internos e ameaças cósmicas. A história aprofunda os laços entre os membros do grupo, mostrando que família é algo construído, não apenas herdado."
+    },
+    {
+      "id": 41,
+      "titulo": "Captain America: The First Avenger",
+      "ano": 2011,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 6.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjEwNmEwOGItNzY3ZS00ZThhLTk4ZWQtZWY3M2E3ZjU3ODY0XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Durante a Segunda Guerra Mundial, Steve Rogers, um jovem frágil mas determinado, voluntaria-se para um programa experimental que o transforma no super-soldado Captain America. Enfrentando a organização HYDRA e o temível Red Skull, Steve torna-se um símbolo de esperança para as forças aliadas. A sua coragem leva-o a fazer um sacrifício que mudará o rumo da guerra e da sua própria vida."
+    },
+    {
+      "id": 42,
+      "titulo": "Captain America: The Winter Soldier",
+      "ano": 2014,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWY1NjFmNDItZDhmOC00NjI1LWE0ZDItMTM0MjBjZThiOTQ2XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Agora adaptado ao mundo moderno, Steve Rogers enfrenta uma conspiração dentro da própria S.H.I.E.L.D. quando uma organização secreta ameaça a segurança global. Ao lado de Black Widow e Falcon, ele descobre que o seu antigo amigo Bucky Barnes foi transformado no assassino conhecido como Winter Soldier. A luta obriga Steve a questionar quem pode realmente confiar num mundo cheio de segredos."
+    },
+    {
+      "id": 43,
+      "titulo": "Captain America: Civil War",
+      "ano": 2016,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_.jpg",
+      "sinopse": "Após um incidente com vítimas civis, os governos do mundo exigem que os Vingadores sejam supervisionados. A equipa divide-se quando Tony Stark apoia o controlo governamental e Steve Rogers se recusa a assinar os Acordos de Sokovia. A tensão aumenta com o regresso do Winter Soldier e uma conspiração que manipula ambos os lados. O conflito culmina numa batalha emocional que abala a união dos heróis."
+    },
+    {
+      "id": 44,
+      "titulo": "Thor",
+      "ano": 2011,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWZiODU0MTYtZjA5MC00NmQ5LTljZjktYTMzNmQwNGIxN2U1XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Thor, o arrogante príncipe de Asgard, é banido para a Terra após desobedecer ao seu pai Odin. Sem os seus poderes, precisa aprender humildade enquanto se adapta ao mundo humano e se apaixona pela cientista Jane Foster. Entretanto, o seu irmão Loki trama para assumir o trono. Thor deve provar que é digno do seu martelo Mjölnir para salvar ambos os mundos."
+    },
+    {
+      "id": 45,
+      "titulo": "Thor: The Dark World",
+      "ano": 2013,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 6.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQyNzAwOTUxOF5BMl5BanBnXkFtZTcwMTE0OTc5OQ@@._V1_.jpg",
+      "sinopse": "Quando uma antiga força chamada Éter desperta, a cientista Jane Foster torna-se hospedeira de um poder capaz de destruir o universo. Thor une forças com aliados improváveis, incluindo Loki, para enfrentar Malekith, líder dos Elfos Negros. A batalha leva-os através de mundos diferentes e coloca em risco tudo o que Thor ama, culminando num confronto que redefine o equilíbrio cósmico."
+    },
+    {
+      "id": 46,
+      "titulo": "Thor: Ragnarok",
+      "ano": 2017,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_.jpg",
+      "sinopse": "Preso no planeta Sakaar, Thor é forçado a lutar numa arena contra o Hulk, agora transformado num gladiador lendário. Enquanto isso, a sua irmã Hela regressa para conquistar Asgard e iniciar o Ragnarok — a destruição profetizada do reino. Thor precisa reunir aliados improváveis para impedir o apocalipse e descobrir que o verdadeiro poder não vem do seu martelo, mas de si próprio."
+    },
+    {
+      "id": 47,
+      "titulo": "Ant-Man",
+      "ano": 2015,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg",
+      "sinopse": "Scott Lang, um ladrão habilidoso mas de bom coração, recebe uma segunda oportunidade quando o cientista Hank Pym o recruta para vestir o fato do Homem-Formiga. Capaz de encolher e controlar formigas, Scott precisa impedir que a tecnologia caia nas mãos erradas. A missão transforma-se numa jornada de redenção e numa luta para proteger a sua filha."
+    },
+    {
+      "id": 48,
+      "titulo": "Ant-Man and the Wasp",
+      "ano": 2018,
+      "genero": "Action",
+      "produtora": "Marvel Studios",
+      "rating": 7.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BODVkY2ZmZTAtYzFhMi00YzZlLWE2YWMtMDBiYjY2OTU4ZWM0XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Scott Lang tenta equilibrar a vida de pai com as responsabilidades de super-herói quando Hope van Dyne e Hank Pym o recrutam para uma nova missão. Juntos, procuram resgatar Janet van Dyne do Reino Quântico, enquanto enfrentam a misteriosa Ghost, que possui habilidades instáveis. A aventura explora dimensões desconhecidas e reforça os laços entre Scott e Hope."
+    },
+    {
+      "id": 49,
+      "titulo": "Deadpool",
+      "ano": 2016,
+      "genero": "Action",
+      "produtora": "20th Century Fox",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzY3ZWU5NGQtOTViNC00ZWVmLTliNjAtNzViNzlkZWQ4YzQ4XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Wade Wilson, um mercenário irreverente, submete-se a um tratamento experimental para curar o cancro, mas acaba desfigurado e com habilidades regenerativas extraordinárias. Assumindo a identidade de Deadpool, embarca numa missão caótica e cheia de humor negro para se vingar do homem que arruinou a sua vida. A jornada mistura ação explosiva com sarcasmo e quebra da quarta parede."
+    },
+    {
+      "id": 50,
+      "titulo": "Deadpool 2",
+      "ano": 2018,
+      "genero": "Action",
+      "produtora": "20th Century Fox",
+      "rating": 7.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGQ4NGZhN2MtNDI3MS00MGE2LWI2NjUtODA2YzRhNDFhMDdiXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Após uma tragédia pessoal, Deadpool tenta encontrar um novo propósito ao proteger Russell, um jovem mutante perseguido pelo viajante do tempo Cable. Para isso, forma a equipa X-Force, composta por heróis tão improváveis quanto ele. Entre humor ácido, ação exagerada e momentos surpreendentemente emocionais, Deadpool descobre que a família pode surgir nos lugares mais inesperados."
+    },
+    {
+      "id": 51,
+      "titulo": "The Hunger Games",
+      "ano": 2012,
+      "genero": "Adventure",
+      "produtora": "Lionsgate",
+      "rating": 7.2,
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2QxODRlN2EtZjA5Zi00ODUxLTg4YTgtYWEyZTMyYWNlMzg0XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Num futuro distópico, a Capital controla os distritos através dos Jogos da Fome, um evento brutal onde jovens lutam até à morte. Quando a irmã mais nova é escolhida, Katniss Everdeen voluntaria-se para tomar o seu lugar. Ao lado de Peeta Mellark, ela enfrenta adversários mortais, manipulação política e a pressão de se tornar um símbolo de esperança. A sua coragem desperta uma chama que ameaça incendiar todo o sistema."
+    },
+    {
+      "id": 52,
+      "titulo": "The Hunger Games: Catching Fire",
+      "ano": 2013,
+      "genero": "Adventure",
+      "produtora": "Lionsgate",
+      "rating": 7.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTA4MTgyMDA0OTVeQTJeQWpwZ15BbWU4MDY0NDU2MTAx._V1_.jpg",
+      "sinopse": "Após vencer os Jogos da Fome, Katniss torna-se um símbolo involuntário de rebelião. Para controlar a crescente revolta, o Presidente Snow organiza uma edição especial dos jogos, reunindo antigos vencedores numa arena ainda mais mortal. Katniss e Peeta são forçados a lutar novamente, enquanto alianças inesperadas e segredos políticos moldam o destino de Panem."
+    },
+    {
+      "id": 53,
+      "titulo": "The Hunger Games: Mockingjay Part 1",
+      "ano": 2014,
+      "genero": "Adventure",
+      "produtora": "Lionsgate",
+      "rating": 6.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTA0MTM5NTg0MzZeQTJeQWpwZ15BbWU4MDQ0NDkwNjIx._V1_.jpg",
+      "sinopse": "Resgatada da arena, Katniss é levada ao Distrito 13, onde se torna o rosto da rebelião contra a Capital. Enquanto tenta salvar Peeta, agora capturado e manipulado, ela enfrenta o peso de ser um símbolo de guerra. A propaganda, a destruição e as perdas pessoais transformam Katniss numa líder relutante, mas essencial para a revolução."
+    },
+    {
+      "id": 54,
+      "titulo": "The Hunger Games: Mockingjay Part 2",
+      "ano": 2015,
+      "genero": "Adventure",
+      "produtora": "Lionsgate",
+      "rating": 6.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjQzNDI2NTU1Ml5BMl5BanBnXkFtZTgwNTAyMDQ5NjE@._V1_.jpg",
+      "sinopse": "A guerra contra a Capital atinge o seu ponto mais violento quando Katniss e a sua equipa avançam para assassinar o Presidente Snow. A cidade transforma-se numa nova arena cheia de armadilhas mortais. À medida que a verdade sobre a rebelião e os seus líderes vem à tona, Katniss enfrenta decisões que determinarão o futuro de Panem e o seu próprio destino."
+    },
+    {
+      "id": 55,
+      "titulo": "Dune",
+      "ano": 2021,
+      "genero": "Sci-Fi",
+      "produtora": "Legendary",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWIyNmU5MGYtZDZmNi00ZjAwLWJlYjgtZTc0ZGIxMDE4ZGYwXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Paul Atreides, herdeiro da Casa Atreides, viaja com a família para o planeta desértico Arrakis, fonte da substância mais valiosa do universo: a especiaria. Traído por forças rivais, Paul e a sua mãe encontram refúgio entre os Fremen, um povo resistente e espiritual. À medida que visões proféticas o guiam, Paul percebe que o seu destino está ligado ao futuro de Arrakis e a uma guerra inevitável."
+    },
+    {
+      "id": 56,
+      "titulo": "Dune: Part Two",
+      "ano": 2024,
+      "genero": "Sci-Fi",
+      "produtora": "Legendary",
+      "rating": 8.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Paul Atreides une-se aos Fremen para vingar a queda da sua casa e enfrentar o Império e os Harkonnen. Enquanto se torna uma figura messiânica, luta contra o peso das profecias e o medo de um futuro devastador. A guerra pelo controlo de Arrakis intensifica-se, levando Paul a escolhas que moldarão o destino do universo e o transformarão numa lenda temida e venerada."
+    },
+    {
+      "id": 57,
+      "titulo": "The Batman",
+      "ano": 2022,
+      "genero": "Action",
+      "produtora": "Warner Bros",
+      "rating": 7.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzYzNzY1OTgtYWZiOC00YWFmLThjNzUtZTM5ZjEwMTMyOGNlXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "No seu segundo ano como vigilante, Batman investiga uma série de assassinatos cometidos pelo enigmático Riddler, que expõe a corrupção enraizada em Gotham. A investigação leva Bruce Wayne a confrontar segredos do passado da sua família e a questionar o impacto da sua missão. Com a ajuda de Selina Kyle e do Comissário Gordon, Batman enfrenta uma ameaça que pretende destruir a cidade através da verdade."
+    },
+    {
+      "id": 58,
+      "titulo": "Joker",
+      "ano": 2019,
+      "genero": "Drama",
+      "produtora": "Warner Bros",
+      "rating": 8.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjQyOTA4NzMtNTk2ZC00YWUwLTgxOTUtNjBkMjE0YmU1OTRmXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Arthur Fleck, um comediante falhado e marginalizado pela sociedade, luta contra problemas mentais enquanto tenta encontrar o seu lugar numa Gotham decadente. Após uma série de humilhações e injustiças, Arthur entra numa espiral de violência que o transforma na figura caótica conhecida como Joker. A sua ascensão torna-se um reflexo perturbador das falhas sociais e da perda de empatia."
+    },
+    {
+      "id": 59,
+      "titulo": "The Flash",
+      "ano": 2023,
+      "genero": "Action",
+      "produtora": "Warner Bros",
+      "rating": 6.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWM5NTNlMTAtYjJkZi00MGZkLTkwNTMtZmY4ZWFmMzkyMDJlXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Barry Allen usa a sua velocidade para viajar no tempo e impedir o assassinato da mãe, mas acaba criando uma realidade alternativa onde heróis e vilões são diferentes. Para restaurar o equilíbrio, Barry une-se a uma versão mais jovem de si mesmo, a um Batman envelhecido e a uma Supergirl poderosa. A missão força-o a aceitar que algumas perdas são inevitáveis, mesmo para um velocista."
+    },
+    {
+      "id": 60,
+      "titulo": "Mission: Impossible",
+      "ano": 1996,
+      "genero": "Action",
+      "produtora": "Paramount",
+      "rating": 7.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGY5NTYzMGItM2YyYy00YjJkLWJhYmQtMGQ0NzBhMjgxNWZmXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Ethan Hunt torna-se o principal suspeito após uma missão da IMF resultar na morte da sua equipa. Fugindo das autoridades, ele precisa descobrir quem o traiu e recuperar uma lista secreta que pode comprometer agentes infiltrados. Com a ajuda de aliados improváveis, Ethan executa planos arriscados e acrobacias icónicas para limpar o seu nome e impedir uma catástrofe internacional."
+    },
+    {
+      "id": 61,
+      "titulo": "Mission: Impossible 2",
+      "ano": 2000,
+      "genero": "Action",
+      "produtora": "Paramount",
+      "rating": 6.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWFjM2NhMTAtNDU1My00ODUxLTkwMzYtODQzNzM0ODM0ZWQ0XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Ethan Hunt é enviado para recuperar um vírus mortal chamado Chimera, roubado por um ex-agente da IMF que pretende vendê-lo ao melhor comprador. Para impedir uma catástrofe global, Ethan recruta Nyah, uma ladra talentosa com ligações ao vilão. A missão envolve perseguições intensas, confrontos pessoais e decisões difíceis, enquanto Ethan luta para salvar milhões de vidas e proteger quem ama."
+    },
+    {
+      "id": 62,
+      "titulo": "Mission: Impossible III",
+      "ano": 2006,
+      "genero": "Action",
+      "produtora": "Paramount",
+      "rating": 6.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzY1MzdjMjYtNDJiZS00N2U4LWI0MWQtZTRiZWYxMzU3ZmI4XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Ethan Hunt tenta levar uma vida normal ao lado da sua noiva, mas é forçado a regressar ao campo quando uma agente que treinou é capturada. A missão coloca-o frente a frente com Owen Davian, um traficante de armas implacável. À medida que Ethan enfrenta perigos extremos e traições internas, a sua vida pessoal e profissional colidem, levando-o a lutar desesperadamente para salvar a mulher que ama."
+    },
+    {
+      "id": 63,
+      "titulo": "Mission: Impossible – Ghost Protocol",
+      "ano": 2011,
+      "genero": "Action",
+      "produtora": "Paramount",
+      "rating": 7.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTcxMDAzNDQ4N15BMl5BanBnXkFtZTcwMDc0OTQ2Ng@@._V1_.jpg",
+      "sinopse": "Após a IMF ser incriminada por um ataque ao Kremlin, Ethan Hunt e a sua equipa operam sem apoio oficial para limpar o nome da agência. A missão leva-os a locais como Dubai e Mumbai, enfrentando um terrorista que pretende iniciar uma guerra nuclear. Com tecnologia limitada e tempo a esgotar, Ethan executa algumas das acrobacias mais arriscadas da saga para impedir o desastre."
+    },
+    {
+      "id": 64,
+      "titulo": "Mission: Impossible – Rogue Nation",
+      "ano": 2015,
+      "genero": "Action",
+      "produtora": "Paramount",
+      "rating": 7.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjUwZjg2ZjAtY2RhZi00YmZjLTlhNGQtOWQwNDk1MjhhM2NhXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Ethan Hunt descobre a existência do Sindicato, uma organização secreta composta por agentes altamente treinados que operam como uma força terrorista global. Com a IMF desmantelada, Ethan conta apenas com a sua equipa e com a misteriosa Ilsa Faust, cuja lealdade é incerta. A missão envolve espionagem, perseguições intensas e uma corrida contra o tempo para impedir o Sindicato de desestabilizar o mundo."
+    },
+    {
+      "id": 65,
+      "titulo": "Mission: Impossible – Fallout",
+      "ano": 2018,
+      "genero": "Action",
+      "produtora": "Paramount",
+      "rating": 7.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGEzYjgxYmEtODY2My00NGM2LTlkOTEtNjMzY2Y4Yzg4MTJmXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Quando uma missão para recuperar plutónio falha, Ethan Hunt e a sua equipa enfrentam uma nova ameaça ligada ao Sindicato. A chegada do agente August Walker complica ainda mais a operação, enquanto Ethan luta contra visões de um futuro devastador. Com sequências de ação impressionantes, a história explora o peso das escolhas de Ethan e o impacto das suas responsabilidades."
+    },
+    {
+      "id": 66,
+      "titulo": "John Wick",
+      "ano": 2014,
+      "genero": "Action",
+      "produtora": "Summit",
+      "rating": 7.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjEzMzQ2Mjg1N15BMl5BanBnXkFtZTgwNDEyODU3MjE@._V1_.jpg",
+      "sinopse": "John Wick, um ex-assassino lendário, regressa ao submundo do crime após a morte da esposa e o assassinato do seu cão — o último presente dela. Em busca de vingança, John enfrenta uma rede de criminosos poderosos e demonstra porque é temido por todos. A sua jornada é marcada por ação estilizada, códigos de honra e um mundo secreto de assassinos profissionais."
+    },
+    {
+      "id": 67,
+      "titulo": "John Wick: Chapter 2",
+      "ano": 2017,
+      "genero": "Action",
+      "produtora": "Summit",
+      "rating": 7.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjI4NjU3MTU0N15BMl5BanBnXkFtZTgwNjk5NzkzMTI@._V1_.jpg",
+      "sinopse": "Forçado a cumprir um pacto de sangue, John Wick regressa ao mundo dos assassinos para eliminar um alvo ligado à Alta Cúpula. A missão leva-o a Roma e desencadeia uma série de traições que o colocam na mira de toda a organização. Com um preço pela sua cabeça, John luta pela sobrevivência enquanto desafia as regras do submundo."
+    },
+    {
+      "id": 68,
+      "titulo": "John Wick: Chapter 3",
+      "ano": 2019,
+      "genero": "Action",
+      "produtora": "Summit",
+      "rating": 7.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTFhMmRiMmYtYzFmNS00ZDdhLWIyOWMtZTI3NjQyZmM3NTAwXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Após matar um membro da Alta Cúpula dentro do Continental, John Wick é declarado 'excomungado' e perde toda a proteção do submundo. Com um contrato milionário pela sua cabeça, ele foge através de Nova Iorque enquanto procura aliados e respostas. A sua jornada revela mais sobre a complexa hierarquia dos assassinos e os sacrifícios necessários para sobreviver."
+    },
+    {
+      "id": 69,
+      "titulo": "John Wick: Chapter 4",
+      "ano": 2023,
+      "genero": "Action",
+      "produtora": "Lionsgate",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2Q2ZmI5ZjUtNWVhMC00YzJkLTlmYjMtY2RmZDhkNzEzYjZhXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "John Wick descobre uma forma de derrotar a Alta Cúpula, mas enfrenta novos inimigos poderosos, incluindo o Marquês de Gramont. A sua luta leva-o por vários países, desde Osaka até Paris, enquanto antigos aliados se tornam adversários e vice-versa. A jornada culmina num duelo decisivo que testa a honra, a resistência e o legado de John."
+    },
+    {
+      "id": 70,
+      "titulo": "Mad Max: Fury Road",
+      "ano": 2015,
+      "genero": "Action",
+      "produtora": "Warner Bros",
+      "rating": 8.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjgxMGRlZDUtNDM0MS00OGNmLWE3NjItNDYzMzlhZTJkNGVlXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Num deserto pós-apocalíptico governado por tiranos, Max Rockatansky une-se a Furiosa, uma guerreira rebelde que tenta libertar um grupo de mulheres escravizadas. Perseguidos pelo cruel Immortan Joe e pelo seu exército, Max e Furiosa embarcam numa fuga frenética repleta de ação intensa. A jornada transforma-se numa luta pela sobrevivência e pela esperança num mundo devastado."
+    },
+    {
+      "id": 71,
+      "titulo": "Furiosa",
+      "ano": 2024,
+      "genero": "Action",
+      "produtora": "Warner Bros",
+      "rating": 7.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjYxZTJkMTItNzNhNC00ODYyLWIyMWYtMDNmNWIxZDhhMTg1XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Raptada da sua terra natal ainda em criança, Furiosa é levada para o domínio de Dementus, um líder cruel que governa através do caos. À medida que cresce, ela luta para sobreviver num deserto brutal e acaba envolvida numa guerra entre facções poderosas. Determinada a regressar ao lar e recuperar o que perdeu, Furiosa enfrenta batalhas intensas que moldam a guerreira lendária que um dia encontrará Max Rockatansky."
+    },
+    {
+      "id": 72,
+      "titulo": "The Social Network",
+      "ano": 2010,
+      "genero": "Drama",
+      "produtora": "Columbia",
+      "rating": 7.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "A criação do Facebook transforma Mark Zuckerberg de estudante universitário introvertido num dos empreendedores mais influentes do mundo. No entanto, o sucesso meteórico traz conflitos legais, traições e disputas sobre a verdadeira autoria da plataforma. A narrativa explora a ascensão tecnológica e o preço emocional e moral de construir um império digital."
+    },
+    {
+      "id": 73,
+      "titulo": "Whiplash",
+      "ano": 2014,
+      "genero": "Drama",
+      "produtora": "Sony",
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGIyZTc1MDEtODA0My00NzlmLTgwMWMtYzdkMmVjZDQyMDM4XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Andrew Neiman, um jovem baterista talentoso, entra para a banda de jazz mais prestigiada da sua escola, liderada pelo temido professor Terence Fletcher. Obcecado pela perfeição, Fletcher usa métodos brutais para testar os limites físicos e psicológicos dos seus alunos. A relação entre ambos transforma-se numa batalha intensa de ambição, disciplina e sacrifício, culminando numa performance inesquecível."
+    },
+    {
+      "id": 74,
+      "titulo": "La La Land",
+      "ano": 2016,
+      "genero": "Musical",
+      "produtora": "Summit",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDYxMTIxMTg0M15BMl5BanBnXkFtZTgwNTExNTE4OTE@._V1_.jpg",
+      "sinopse": "Mia, uma aspirante a atriz, e Sebastian, um pianista apaixonado por jazz, cruzam caminhos em Los Angeles enquanto perseguem os seus sonhos artísticos. A relação entre ambos floresce, mas as ambições individuais começam a afastá-los. A história explora o equilíbrio entre amor e carreira, celebrando a beleza dos sonhos e o preço das escolhas que moldam o futuro."
+    },
+    {
+      "id": 75,
+      "titulo": "The Revenant",
+      "ano": 2015,
+      "genero": "Adventure",
+      "produtora": "20th Century Fox",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2M2M2I0M2MtOTNhNy00MzIyLTk5NTctN2EwMmUwODQzYzgzXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Hugh Glass, um explorador do século XIX, é brutalmente atacado por um urso e deixado para morrer pelos seus companheiros. Ferido e sozinho no deserto gelado, ele inicia uma jornada quase impossível de sobrevivência e vingança. Guiado pela determinação e pela memória do filho, Glass enfrenta a natureza implacável e a crueldade humana numa luta épica pela justiça."
+    },
+    {
+      "id": 76,
+      "titulo": "The Wolf of Wall Street",
+      "ano": 2013,
+      "genero": "Drama",
+      "produtora": "Paramount",
+      "rating": 8.2,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg",
+      "sinopse": "Jordan Belfort ascende rapidamente no mundo financeiro através de esquemas ilegais, manipulação de ações e um estilo de vida extravagante. Rodeado por excessos, drogas e corrupção, ele constrói um império que inevitavelmente atrai a atenção do FBI. A história retrata a ascensão e queda de um dos mais controversos corretores de Wall Street, expondo a ganância e o poder da sedução financeira."
+    },
+    {
+      "id": 77,
+      "titulo": "Shutter Island",
+      "ano": 2010,
+      "genero": "Thriller",
+      "produtora": "Paramount",
+      "rating": 8.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "O agente federal Teddy Daniels viaja até Shutter Island para investigar o desaparecimento de uma paciente de um hospital psiquiátrico. À medida que descobre segredos perturbadores, Teddy começa a questionar a própria sanidade e a natureza da instituição. A investigação transforma-se num labirinto psicológico onde nada é o que parece, culminando numa revelação devastadora."
+    },
+    {
+      "id": 78,
+      "titulo": "The Departed",
+      "ano": 2006,
+      "genero": "Crime",
+      "produtora": "Warner Bros",
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjAzOTQ4MjgxMV5BMl5BanBnXkFtZTcwOTY5MjcwNg@@._V1_.jpg",
+      "sinopse": "Em Boston, um jovem polícia infiltra-se numa poderosa organização criminosa enquanto um membro da mesma gangue se infiltra na polícia. Ambos tentam descobrir a identidade um do outro antes de serem expostos. A tensão aumenta à medida que traições, segredos e violência se acumulam, levando a um confronto explosivo entre lealdade e sobrevivência."
+    },
+    {
+      "id": 79,
+      "titulo": "Django Unchained",
+      "ano": 2012,
+      "genero": "Western",
+      "produtora": "Weinstein",
+      "rating": 8.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjI0ODg1ODMzNF5BMl5BanBnXkFtZTcwNDU2OTA3OA@@._V1_.jpg",
+      "sinopse": "Django, um escravo libertado, une-se ao caçador de recompensas Dr. King Schultz para capturar criminosos procurados. Em troca, Schultz ajuda Django a procurar a sua esposa, ainda escravizada numa plantação brutal. A jornada leva-os a enfrentar o cruel Calvin Candie, num confronto sangrento que desafia a opressão e a injustiça do sul dos Estados Unidos pré-Guerra Civil."
+    },
+    {
+      "id": 80,
+      "titulo": "Inglourious Basterds",
+      "ano": 2009,
+      "genero": "War",
+      "produtora": "Universal",
+      "rating": 8.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2Q1OWM0NmYtZmZmYy00YWIzLTk3MzQtNGQ4N2YxNDAxOTQ5XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Durante a Segunda Guerra Mundial, um grupo de soldados judeus-americanos conhecidos como 'Basterds' espalha terror entre oficiais nazis através de ataques brutais. Paralelamente, uma jovem dona de cinema planeia a sua própria vingança contra os ocupantes alemães. As duas histórias convergem num plano explosivo que reimagina o fim do regime nazi de forma ousada e cinematográfica."
+    },
+    {
+      "id": 81,
+      "titulo": "The Prestige",
+      "ano": 2006,
+      "genero": "Drama",
+      "produtora": "Touchstone",
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMmViNmRlMjMtZDdkNC00NDdlLWJmYzEtMDQ1YjQ1NDBmNDRjXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Dois ilusionistas rivais, Robert Angier e Alfred Borden, transformam a sua obsessão pela magia numa guerra pessoal marcada por sabotagem, traição e sacrifícios extremos. À medida que tentam superar-se mutuamente, recorrem a métodos cada vez mais perigosos, incluindo ciência experimental e truques mortais. A rivalidade culmina numa revelação chocante sobre o preço da ambição e da busca pela perfeição."
+    },
+    {
+      "id": 82,
+      "titulo": "Memento",
+      "ano": 2000,
+      "genero": "Thriller",
+      "produtora": "Newmarket",
+      "rating": 8.4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNDY2NDI1OF5BMl5BanBnXkFtZTYwMzUwNzc3._V1_.jpg",
+      "sinopse": "Leonard Shelby sofre de perda de memória recente após um ataque traumático que resultou na morte da sua esposa. Incapaz de formar novas memórias, ele usa fotografias, notas e tatuagens para seguir pistas na busca pelo assassino. A narrativa fragmentada revela gradualmente a verdade, mostrando como a memória, a identidade e a vingança podem ser manipuladas."
+    },
+    {
+      "id": 83,
+      "titulo": "The Truman Show",
+      "ano": 1998,
+      "genero": "Drama",
+      "produtora": "Paramount",
+      "rating": 8.2,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Truman Burbank vive uma vida aparentemente perfeita numa cidade pacífica, mas começa a desconfiar quando eventos estranhos revelam que tudo à sua volta é artificial. Sem saber, Truman é a estrela de um reality show transmitido mundialmente desde o seu nascimento. Determinado a descobrir a verdade, ele desafia os limites do mundo criado para o controlar e procura a liberdade além das câmaras."
+    },
+    {
+      "id": 84,
+      "titulo": "The Green Mile",
+      "ano": 1999,
+      "genero": "Drama",
+      "produtora": "Warner Bros",
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_.jpg",
+      "sinopse": "Paul Edgecomb, guarda numa prisão de condenados à morte, conhece John Coffey, um prisioneiro com poderes sobrenaturais e uma bondade inexplicável. À medida que Paul descobre a verdade sobre o crime pelo qual Coffey foi condenado, enfrenta dilemas morais profundos sobre justiça, fé e humanidade. A história explora o impacto transformador que um homem pode ter mesmo nos lugares mais sombrios."
+    },
+    {
+      "id": 85,
+      "titulo": "The Silence of the Lambs",
+      "ano": 1991,
+      "genero": "Thriller",
+      "produtora": "Orion Pictures",
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQxMzMxMDk4N15BMl5BanBnXkFtZTcwMTYxMzk1OQ@@._V1_.jpg",
+      "sinopse": "Clarice Starling, uma jovem agente do FBI, procura a ajuda do brilhante mas perigoso Dr. Hannibal Lecter para capturar um assassino em série conhecido como Buffalo Bill. Lecter, manipulador e enigmático, fornece pistas enquanto joga com a mente de Clarice. A relação entre ambos torna-se um jogo psicológico intenso que revela traumas, segredos e a verdadeira natureza do mal."
+    },
+    {
+      "id": 86,
+      "titulo": "Se7en",
+      "ano": 1995,
+      "genero": "Thriller",
+      "produtora": "New Line Cinema",
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDY4ZGUxODEtZDM1NS00NmE3LWE2MzktZjczNjA2YTU1N2I4XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Dois detetives, Somerset e Mills, investigam uma série de assassinatos brutais inspirados nos sete pecados capitais. O assassino, meticuloso e paciente, cria cenas perturbadoras que desafiam a moralidade e a sanidade dos investigadores. À medida que o caso avança, a tensão cresce até um desfecho chocante que se tornou um dos mais marcantes do cinema policial."
+    },
+    {
+      "id": 87,
+      "titulo": "Braveheart",
+      "ano": 1995,
+      "genero": "War",
+      "produtora": "Paramount",
+      "rating": 8.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BODE5YTJjY2ItMDQxZi00N2I4LTg1YWQtMTVlZWRhOTY4NGJjXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "William Wallace, um guerreiro escocês, lidera uma revolta contra a opressão inglesa após a morte brutal da sua esposa. Movido pela dor e pela busca de liberdade, Wallace inspira um exército de camponeses a enfrentar um império poderoso. A sua coragem e sacrifício tornam-se símbolos eternos da luta pela independência da Escócia."
+    },
+    {
+      "id": 88,
+      "titulo": "Saving Private Ryan",
+      "ano": 1998,
+      "genero": "War",
+      "produtora": "DreamWorks",
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGZhZGQ1ZWUtZTZjYS00MDJhLWFkYjctN2ZlYjE5NWYwZDM2XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Após o desembarque na Normandia, um grupo de soldados americanos recebe a missão de encontrar e resgatar o soldado James Ryan, cujo três irmãos morreram em combate. Liderados pelo Capitão Miller, eles atravessam territórios devastados pela guerra, enfrentando perigos constantes. A jornada levanta questões profundas sobre sacrifício, dever e o valor de uma única vida."
+    },
+    {
+      "id": 89,
+      "titulo": "The Pianist",
+      "ano": 2002,
+      "genero": "Drama",
+      "produtora": "Focus Features",
+      "rating": 8.5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjk4MWM2ZTAtMmEwNy00MDAzLWE1ZTQtMjJlNTUwNDhhMmNmXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Władysław Szpilman, um pianista judeu polaco, luta para sobreviver durante a ocupação nazi de Varsóvia. Separado da família e testemunhando horrores indescritíveis, ele esconde-se em ruínas e edifícios abandonados enquanto tenta manter a esperança. A música torna-se a sua última ligação à humanidade num dos retratos mais emocionantes do Holocausto."
+    },
+    {
+      "id": 90,
+      "titulo": "The Curious Case of Benjamin Button",
+      "ano": 2008,
+      "genero": "Drama",
+      "produtora": "Warner Bros",
+      "rating": 7.8,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGNlZTZlMzAtYWMyOC00OGViLWJiNmYtZTUxYThjYTExYThmXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Benjamin Button nasce com a aparência e fragilidade de um idoso, mas rejuvenesce à medida que o tempo passa. A sua vida extraordinária cruza-se com a de Daisy, o grande amor que encontra num ponto intermédio das suas idades opostas. A história explora o tempo, a mortalidade e a beleza efémera das relações humanas através de uma jornada única e poética."
+    },
+   {
+      "id": 91,
+      "titulo": "The Grand Budapest Hotel",
+      "ano": 2014,
+      "genero": "Comedy",
+      "produtora": "Fox Searchlight",
+      "rating": 8.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjRiMmYxMmEtODk1OC00YTg0LWE3ZGYtYTliNjUxYWM2MDkxXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Gustave H., o lendário concierge do Grand Budapest Hotel, e Zero, o jovem lobby boy, tornam-se aliados improváveis quando Gustave é acusado de assassinar uma rica cliente. Envolvidos numa trama que inclui um quadro valioso, uma família gananciosa e uma fuga ousada da prisão, ambos embarcam numa aventura excêntrica pela Europa. A história celebra amizade, lealdade e o fim de uma era marcada pela elegância e caos."
+    },
+    {
+      "id": 92,
+      "titulo": "Her",
+      "ano": 2013,
+      "genero": "Romance",
+      "produtora": "Warner Bros",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWIwMTQ5NzQtZTlmYy00MWIwLWIyNjUtY2U0NTNkMmE2ZjVkXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Theodore, um escritor solitário, encontra conforto num sistema operativo avançado chamado Samantha, cuja inteligência artificial evolui rapidamente. À medida que a relação entre ambos se aprofunda, Theodore confronta emoções complexas sobre amor, intimidade e conexão humana. A história explora a fragilidade dos sentimentos num mundo cada vez mais tecnológico e isolado."
+    },
+    {
+      "id": 93,
+      "titulo": "Arrival",
+      "ano": 2016,
+      "genero": "Sci-Fi",
+      "produtora": "Paramount",
+      "rating": 7.9,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTU5Mjc2ODc1OV5BMl5BanBnXkFtZTgwNTQwMzYyMDI@._V1_.jpg",
+      "sinopse": "Quando naves alienígenas pousam em vários pontos do planeta, a linguista Louise Banks é recrutada para comunicar com os visitantes. À medida que desvenda a linguagem extraterrestre, Louise começa a experienciar visões que desafiam a sua perceção do tempo. A missão revela uma mensagem profunda sobre cooperação global e o impacto das escolhas pessoais no futuro."
+    },
+    {
+      "id": 94,
+      "titulo": "Blade Runner 2049",
+      "ano": 2017,
+      "genero": "Sci-Fi",
+      "produtora": "Warner Bros",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTU0NjM4MzI2N15BMl5BanBnXkFtZTgwMTQ2MzI2MzI@._V1_.jpg",
+      "sinopse": "K, um replicante caçador de androides ilegais, descobre um segredo que pode abalar a frágil ordem entre humanos e replicantes. A investigação leva-o a procurar Rick Deckard, desaparecido há décadas. A jornada mergulha K num mundo de memórias artificiais, identidades fragmentadas e dilemas existenciais, culminando numa busca pela verdade e pela humanidade."
+    },
+    {
+      "id": 95,
+      "titulo": "The Imitation Game",
+      "ano": 2014,
+      "genero": "Drama",
+      "produtora": "Weinstein",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTU3NzE1MjkzMF5BMl5BanBnXkFtZTgwMTM5MDM0NDE@._V1_.jpg",
+      "sinopse": "Durante a Segunda Guerra Mundial, o matemático Alan Turing lidera uma equipa secreta encarregada de decifrar o código Enigma, utilizado pelos nazis. Lutando contra o tempo, o sigilo e a discriminação, Turing desenvolve uma máquina revolucionária que muda o rumo da guerra. Apesar do seu génio, enfrenta perseguição devido à sua orientação sexual, num retrato comovente de injustiça e legado."
+    },
+    {
+      "id": 96,
+      "titulo": "The Theory of Everything",
+      "ano": 2014,
+      "genero": "Drama",
+      "produtora": "Focus Features",
+      "rating": 7.7,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTU1NzEzNjI3OF5BMl5BanBnXkFtZTgwNzI3MjA0MjE@._V1_.jpg",
+      "sinopse": "A história acompanha a vida do físico Stephen Hawking desde os seus anos universitários, quando é diagnosticado com uma doença motora degenerativa. Com o apoio da sua esposa Jane, Stephen desafia expectativas médicas e desenvolve teorias que revolucionam a ciência. O filme explora o amor, o sacrifício e a força humana diante de desafios extraordinários."
+    },
+    {
+      "id": 97,
+      "titulo": "Gone Girl",
+      "ano": 2014,
+      "genero": "Thriller",
+      "produtora": "20th Century Fox",
+      "rating": 8.1,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDQwNTk5MjM4Ml5BMl5BanBnXkFtZTgwNDI1NzQxMjE@._V1_.jpg",
+      "sinopse": "Quando Amy Dunne desaparece misteriosamente, o seu marido Nick torna-se o principal suspeito. À medida que a investigação avança, segredos perturbadores sobre o casamento vêm à tona. A narrativa revela manipulação, obsessão e jogos psicológicos que desafiam a perceção do público, culminando num retrato inquietante de relações tóxicas e da influência mediática."
+    },
+    {
+      "id": 98,
+      "titulo": "The Shape of Water",
+      "ano": 2017,
+      "genero": "Fantasy",
+      "produtora": "Fox Searchlight",
+      "rating": 7.3,
+      "poster": "https://m.media-amazon.com/images/M/MV5BODU5NTAzOTI3OV5BMl5BanBnXkFtZTgwOTc0MjQ1MzI@._V1_.jpg",
+      "sinopse": "Elisa, uma funcionária de limpeza muda, trabalha num laboratório secreto do governo onde descobre uma criatura aquática mantida em cativeiro. À medida que desenvolve uma ligação profunda com o ser, Elisa arrisca tudo para o libertar das mãos de um agente cruel. A história mistura fantasia, romance e crítica social numa celebração da empatia e da diferença."
+    },
+    {
+      "id": 99,
+      "titulo": "Parasite",
+      "ano": 2019,
+      "genero": "Thriller",
+      "produtora": "CJ Entertainment",
+      "rating": 8.6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2MxNDdmN2EtMDg5OS00NTlmLTk1YzItY2RkZTYyOGY1ZTQ0XkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "A família Kim, vivendo na pobreza, infiltra-se gradualmente na casa da rica família Park através de esquemas engenhosos. O que começa como uma oportunidade transforma-se numa espiral de tensão, segredos e violência. A história expõe desigualdades sociais profundas e revela como duas famílias, separadas por classe, acabam presas num destino trágico."
+    },
+    {
+      "id": 100,
+      "titulo": "Everything Everywhere All at Once",
+      "ano": 2022,
+      "genero": "Sci-Fi",
+      "produtora": "A24",
+      "rating": 8.0,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzJmYmMzOTQtMGJiNC00YzhhLThhMjUtOWQxNzMxNmM0MTkwXkEyXkFqcGc@._V1_.jpg",
+      "sinopse": "Evelyn Wang, uma imigrante sobrecarregada com problemas familiares e financeiros, descobre que é a chave para salvar o multiverso. Conectando-se a versões alternativas de si mesma, ela enfrenta ameaças absurdas e emocionais enquanto tenta reparar a relação com a filha. A história mistura ação, humor e drama numa reflexão profunda sobre identidade, escolhas e amor."
+    }
+  ]
+}
+

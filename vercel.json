@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "Static/**/*", "use": "@vercel/static" },
+    { "src": "Dados/**/*", "use": "@vercel/static" },
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "components.js", "use": "@vercel/static" },
+    { "src": "script.js", "use": "@vercel/static" },
+    { "src": "filme.js", "use": "@vercel/static" },
+    { "src": "generos.js", "use": "@vercel/static" },
+    { "src": "produtoras.js", "use": "@vercel/static" },
+    { "src": "balde.js", "use": "@vercel/static" },
+    { "src": "index.js", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/login", "dest": "server.js" },
+    { "src": "/register", "dest": "server.js" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
