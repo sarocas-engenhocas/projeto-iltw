@@ -3,10 +3,9 @@ let filmes = [];
 const listaProdutoras = document.getElementById("produtoras-lista");
 listaProdutoras.innerHTML = "<p style='text-align:center;font-size:20px;'>A carregar...</p>";
 
-fetch("Dados/filmes.json")               // Faz o pedido ao ficheiro filmes.json
-  .then(res => res.json())               // Converte a resposta para JSON
+carregarDados()
   .then(data => {
-    filmes = data.filmes;                // Guarda o array de filmes na variável global
+    filmes = data.filmes;
 
     // Obter produtoras únicas
     // Faz um map para obter apenas o nome da produtora de cada filme

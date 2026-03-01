@@ -31,8 +31,7 @@ function renderFilmes(lista) {
     });
 }
 
-fetch("Dados/filmes.json")
-  .then(res => res.json())
+carregarDados()
   .then(data => {
       filmesData = data.filmes;
       renderFilmes(filmesData);
@@ -41,7 +40,7 @@ fetch("Dados/filmes.json")
       if (container) {
           container.innerHTML = "<p style='text-align:center;font-size:20px;color:red;'>Erro ao carregar filmes.</p>";
       }
-      console.error("Erro ao carregar filmes para lista:", err);
+      console.error("Erro ao carregar filmes:", err);
   });
 
 function verMais(id) {

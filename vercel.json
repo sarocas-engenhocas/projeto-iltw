@@ -11,11 +11,15 @@
     { "src": "generos.js", "use": "@vercel/static" },
     { "src": "produtoras.js", "use": "@vercel/static" },
     { "src": "balde.js", "use": "@vercel/static" },
-    { "src": "index.js", "use": "@vercel/static" }
+    { "src": "index.js", "use": "@vercel/static" },
+    { "src": "dataLoader.js", "use": "@vercel/static" },
+    { "src": "login.js", "use": "@vercel/static" },
+    { "src": "registar.js", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/login", "dest": "server.js" },
     { "src": "/register", "dest": "server.js" },
+    { "src": "/", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }

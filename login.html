@@ -12,44 +12,26 @@
 <body>
     <script src="components.js"></script>
     <script>injectHeader();</script>
-    <div class="head">
+    <div id="main-content" class="head">
             <h1><span class="linha">—</span>LOGIN<span class="linha">—</span></h1>
     </div>
 
 
     <div class="login-container">
     <form id="loginForm">
+        <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="Email" required>
+        <span class="error-message" id="email-error"></span>
+        <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="Password" required>
+        <span class="error-message" id="password-error"></span>
         <button type="submit" class="btn-balde">Login</button>
     </form>
     <p id="message"></p>
     </div>
 
-    <script>
-    document.getElementById('loginForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const msg = document.getElementById('message');
-        msg.textContent = 'A autenticar...';
-        try {
-            const res = await fetch('/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, password })
-            });
-            const data = await res.json();
-            msg.textContent = data.message;
-            msg.style.color = res.ok ? 'green' : 'red';
-        } catch {
-            msg.textContent = 'Erro de ligação ao servidor.';
-            msg.style.color = 'red';
-        }
-    });
-    </script>
-    
     <script>injectFooter();</script>
+    <script src="login.js"></script>
     
 </body>
 </html>

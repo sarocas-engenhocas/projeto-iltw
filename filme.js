@@ -4,25 +4,16 @@
 const params = new URLSearchParams(window.location.search); 
 // Cria um objeto que permite ler parâmetros da URL, ex: filme.html?id=3
 
+const container = document.getElementById("filme-container");
+
 const id = parseInt(params.get("id"));
 if (isNaN(id)) {
     container.innerHTML = "<p style='text-align:center;font-size:20px;color:red;'>ID de filme inválido.</p>";
     throw new Error("ID inválido");
 }
-// Extrai o valor do parâmetro "id" e converte para número inteiro
-// Este ID será usado para encontrar o filme correto no JSON
-
-
-// 2. Buscar o JSON
-const container = document.getElementById("filme-container");
 container.innerHTML = "<p style='text-align:center;font-size:20px;'>A carregar...</p>";
 
-fetch("Dados/filmes.json") 
-// Faz uma requisição HTTP para carregar o ficheiro filmes.json
-
-  .then(res => res.json()) 
-  // Converte a resposta para formato JSON
-
+carregarDados()
   .then(data => {
       // Aqui já temos acesso ao conteúdo do JSON carregado
 

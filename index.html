@@ -13,7 +13,7 @@
     <script src="components.js"></script>
     <script>injectHeader();</script>
 
-    <div class="welcome">
+    <div id="main-content" class="welcome">
         <img src="Static/pics/WelcomeBanner.png" alt="Bem-vindo ao PipocaDigital - Catálogo de Filmes" class="imagem-bemvindo">
     </div>
 
@@ -21,8 +21,8 @@
         <h1><span class="linha">—</span>DESTAQUES<span class="linha">—</span></h1>
     </div>
 
-    <div class="carousel">
-        <button class="carousel__button carousel__button--left is-hidden">
+    <div class="carousel" role="region" aria-roledescription="carrossel" aria-label="Destaques de filmes">
+        <button class="carousel__button carousel__button--left is-hidden" aria-label="Slide anterior">
             <img src="Static/pics/arrow-left.png" alt="">
         </button>
 
@@ -61,14 +61,14 @@
             </ul>
         </div>
 
-        <button class="carousel__button carousel__button--right">
+        <button class="carousel__button carousel__button--right" aria-label="Próximo slide">
             <img src="Static/pics/arrow-right.png" alt="">
         </button>
 
         <div class="carousel__nav">
-            <button class="carousel__indicator current-slide"></button>
-            <button class="carousel__indicator"></button>
-            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator current-slide" aria-label="Ir para slide 1" aria-current="true"></button>
+            <button class="carousel__indicator" aria-label="Ir para slide 2"></button>
+            <button class="carousel__indicator" aria-label="Ir para slide 3"></button>
         </div>  
            
     </div>
@@ -76,6 +76,7 @@
     <script>injectFooter();</script>
 
 
+<script src="dataLoader.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

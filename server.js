@@ -29,10 +29,10 @@ app.post('/login', (req, res) => {
   if (!user) {
     return res.status(401).json({ message: 'Email ou palavra-passe incorretos.' });
   }
-  res.json({ message: `Bem-vindo de volta, ${user.nome}!` });
+  res.json({ message: `Bem-vindo de volta, ${user.nome}!`, nome: user.nome });
 });
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') {
   app.listen(port, () => {
     console.log(`Servidor a correr em http://localhost:${port}`);
   });

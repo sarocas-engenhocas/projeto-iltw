@@ -3,10 +3,9 @@ let filmes = [];
 const listaGeneros = document.getElementById("generos-lista");
 listaGeneros.innerHTML = "<p style='text-align:center;font-size:20px;'>A carregar...</p>";
 
-fetch("Dados/filmes.json")  
-  .then(res => res.json()) // Converte a resposta do fetch para JSON
+carregarDados()
   .then(data => {
-    filmes = data.filmes; // Guarda o array de filmes na variável global
+    filmes = data.filmes;
 
     // Obter géneros únicos
     // Faz um map para obter apenas o género de cada filme

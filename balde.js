@@ -8,10 +8,9 @@ let balde = JSON.parse(localStorage.getItem("balde")) || [];
 const container = document.getElementById("balde-container");
 container.innerHTML = "<p style='text-align:center;font-size:20px;'>A carregar...</p>";
 
-fetch("Dados/filmes.json")
-  .then(res => res.json()) // Converte a resposta para JSON
+carregarDados()
   .then(data => {
-    const filmes = data.filmes; // Guarda o array de filmes do JSON
+    const filmes = data.filmes;
 
     // 3. Filtrar apenas os filmes que estão no balde
     // Compara cada filme do JSON com os IDs guardados no localStorage.

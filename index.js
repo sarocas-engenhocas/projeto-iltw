@@ -1,5 +1,4 @@
-fetch("Dados/filmes.json")
-    .then(response => response.json())
+carregarDados()
     .then(data => {
         const top3 = [...data.filmes]
            .sort((a, b) => b.rating - a.rating)
@@ -8,21 +7,21 @@ fetch("Dados/filmes.json")
         document.getElementById("title1").textContent = top3[0].titulo;
         document.getElementById("year1").textContent = "Ano: " + top3[0].ano;
         document.getElementById("genre1").textContent = "Género: " + top3[0].genero;
-        document.getElementById("producer1").textContent = "Produtor: " + top3[0].produtor;
+        document.getElementById("producer1").textContent = "Produtora: " + top3[0].produtora;
         document.getElementById("rating1").textContent = "Rating: " + top3[0].rating;
         document.getElementById("img1").src = top3[0].poster;
 
         document.getElementById("title2").textContent = top3[1].titulo;
         document.getElementById("year2").textContent = "Ano: " + top3[1].ano;
         document.getElementById("genre2").textContent = "Género: " + top3[1].genero;
-        document.getElementById("producer2").textContent = "Produtor: " + top3[1].produtor;
+        document.getElementById("producer2").textContent = "Produtora: " + top3[1].produtora;
         document.getElementById("rating2").textContent = "Rating: " + top3[1].rating;
         document.getElementById("img2").src = top3[1].poster;
 
         document.getElementById("title3").textContent = top3[2].titulo;
         document.getElementById("year3").textContent = "Ano: " + top3[2].ano;
         document.getElementById("genre3").textContent = "Género: " + top3[2].genero;
-        document.getElementById("producer3").textContent = "Produtor: " + top3[2].produtor;
+        document.getElementById("producer3").textContent = "Produtora: " + top3[2].produtora;
         document.getElementById("rating3").textContent = "Rating: " + top3[2].rating;
         document.getElementById("img3").src = top3[2].poster;
     })
@@ -50,7 +49,9 @@ if (track) {
 
     const updateDots = (currentDot, targetDot) => {
         currentDot.classList.remove('current-slide');
+        currentDot.removeAttribute('aria-current');
         targetDot.classList.add('current-slide');
+        targetDot.setAttribute('aria-current', 'true');
     };
 
     const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
