@@ -1,46 +1,30 @@
 let filmes = [];
-
 const listaGeneros = document.getElementById("generos-lista");
-listaGeneros.innerHTML = "<p style='text-align:center;font-size:20px;'>A carregar...</p>";
+listaGeneros.innerHTML = "<p class='loading-msg'>A carregar...</p>";
 
 carregarDados()
   .then(data => {
     filmes = data.filmes;
-
-    // Obter géneros únicos
-    // Faz um map para obter apenas o género de cada filme
-    // Depois usa Set para remover duplicados
-    // E transforma novamente em array com [...]
     const generos = [...new Set(filmes.map(f => f.genero))];
 
-    // Criar quadrados dos géneros
     generos.forEach(genero => {
-      const card = document.createElement("div"); // Cria um quadrado
-      card.classList.add("genero-card"); // Adiciona a classe de estilo
-      card.textContent = genero; // Mostra o nome do género no quadrado
-
-      // Quando o quadrado é clicado, chama a função que mostra os filmes desse género
+      const card = document.createElement("div");
+      card.classList.add("genero-card");
+      card.textContent = genero;
       card.addEventListener("click", () => mostrarFilmesDoGenero(genero));
-
-      listaGeneros.appendChild(card); // Adiciona o quadrado ao HTML
+      listaGeneros.appendChild(card);
     });
   })
   .catch(err => {
-      listaGeneros.innerHTML = "<p style='text-align:center;font-size:20px;color:red;'>Erro ao carregar géneros.</p>";
+      listaGeneros.innerHTML = "<p class='error-msg'>Erro ao carregar géneros.</p>";
       console.error("Erro ao carregar géneros:", err);
   });
 
-
-
-// Função para mostrar filmes do género clicado
 function mostrarFilmesDoGenero(genero) {
-  const container = document.getElementById("filmes-genero");  
-  container.innerHTML = ""; // limpar o conteúdo anterior
-
-  // Filtra os filmes que pertencem ao género clicado
+  const container = document.getElementById("filmes-genero");
+  container.innerHTML = "";
   const filtrados = filmes.filter(f => f.genero === genero);
 
-  // Para cada filme filtrado, cria um card HTML
   filtrados.forEach(filme => {
     const card = `
       <div class="filme-card">
@@ -55,16 +39,10 @@ function mostrarFilmesDoGenero(genero) {
           </button>
       </div>
     `;
-
-    // Insere o card no container dos filmes
     container.insertAdjacentHTML("beforeend", card);
   });
 }
 
-
-
-// Função que redireciona para a página de detalhes do filme
 function verMais(id) {
-  // Envia o utilizador para filme.html com o ID do filme na URL
   window.location.href = `filme.html?id=${id}`;
 }

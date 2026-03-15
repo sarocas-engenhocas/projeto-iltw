@@ -1,5 +1,15 @@
+process.env.DB_PATH = require('path').join(__dirname, 'users.test.json');
+process.env.NODE_ENV = 'test';
+
+const fs = require('fs');
+try { fs.unlinkSync(process.env.DB_PATH); } catch {}
+
 const request = require("supertest");
 const app = require("./server");
+
+afterAll(() => {
+    try { fs.unlinkSync(process.env.DB_PATH); } catch {}
+});
 
 describe("POST /register", () => {
     it("regista um novo utilizador", async () => {

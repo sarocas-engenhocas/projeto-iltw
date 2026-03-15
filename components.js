@@ -3,7 +3,7 @@ function injectHeader() {
     let authLinksHtml;
     if (user) {
         authLinksHtml = `<span style="color:white;font-size:15px;margin-right:20px;">Olá, ${user.nome}!</span>
-            <a href="#" id="logout-btn" style="font-size:15px;color:white;text-decoration:none;">Logout</a>`;
+            <a href="javascript:void(0)" id="logout-btn" style="font-size:15px;color:white;text-decoration:none;">Logout</a>`;
     } else {
         authLinksHtml = `<a href="login.html" style="font-size:15px;margin-right:10px;">Login</a>
             <a href="criarconta.html" style="font-size:15px;">Criar Conta</a>`;
@@ -22,7 +22,7 @@ function injectHeader() {
         <a href="generos.html">Géneros</a>
         <a href="balde.html">Balde</a>
         <a href="sobre.html" class="btn-sobre">Sobre</a>
-        <a href="filmes.html"><img src="Static/pics/search.png" style="height:25px;" alt="Pesquisar filmes"></a>
+        <a href="filmes.html"><img src="Static/pics/search.png" style="height:25px;" alt="Ver lista de filmes"></a>
         </div>
         </div>
     </header>
@@ -50,7 +50,7 @@ function injectFooter() {
             <a href="balde.html">Balde</a>
         </div>
     </div>
-        <p>© 2026 Pipoca Digital. Todos os direitos reservados.</p>
+        <p>© ${new Date().getFullYear()} Pipoca Digital. Todos os direitos reservados.</p>
     </footer>
     `);
 }

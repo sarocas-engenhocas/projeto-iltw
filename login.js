@@ -45,7 +45,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         });
         const data = await res.json();
         if (res.ok) {
-            localStorage.setItem("user", JSON.stringify({ nome: data.nome }));
+            localStorage.setItem("user", JSON.stringify({ nome: data.nome, email: email.value.trim() }));
             window.location.href = "index.html";
         } else {
             msg.textContent = data.message;

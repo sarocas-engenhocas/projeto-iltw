@@ -1,46 +1,30 @@
 let filmes = [];
-
 const listaProdutoras = document.getElementById("produtoras-lista");
-listaProdutoras.innerHTML = "<p style='text-align:center;font-size:20px;'>A carregar...</p>";
+listaProdutoras.innerHTML = "<p class='loading-msg'>A carregar...</p>";
 
 carregarDados()
   .then(data => {
     filmes = data.filmes;
-
-    // Obter produtoras únicas
-    // Faz um map para obter apenas o nome da produtora de cada filme
-    // Usa Set para remover duplicados
-    // Converte novamente para array com [...]
     const produtoras = [...new Set(filmes.map(f => f.produtora))];
 
-    // Criar quadrados das produtoras
     produtoras.forEach(produtora => {
-      const card = document.createElement("div");  // Cria um quadrado
-      card.classList.add("genero-card");           // Usa a mesma classe visual dos géneros
-      card.textContent = produtora;                // Mostra o nome da produtora
-
-      // Quando o quadrado é clicado, mostra os filmes dessa produtora
+      const card = document.createElement("div");
+      card.classList.add("produtora-card");
+      card.textContent = produtora;
       card.addEventListener("click", () => mostrarFilmesDaProdutora(produtora));
-
-      listaProdutoras.appendChild(card);           // Adiciona o quadrado ao HTML
+      listaProdutoras.appendChild(card);
     });
   })
   .catch(err => {
-      listaProdutoras.innerHTML = "<p style='text-align:center;font-size:20px;color:red;'>Erro ao carregar produtoras.</p>";
+      listaProdutoras.innerHTML = "<p class='error-msg'>Erro ao carregar produtoras.</p>";
       console.error("Erro ao carregar produtoras:", err);
   });
 
-
-
-// Função para mostrar filmes da produtora clicada
 function mostrarFilmesDaProdutora(produtora) {
   const container = document.getElementById("filmes-produtora");
-  container.innerHTML = ""; // Limpa o conteúdo anterior
-
-  // Filtra os filmes que pertencem à produtora clicada
+  container.innerHTML = "";
   const filtrados = filmes.filter(f => f.produtora === produtora);
 
-  // Para cada filme filtrado, cria um card HTML
   filtrados.forEach(filme => {
     const card = `
       <div class="filme-card">
@@ -55,16 +39,10 @@ function mostrarFilmesDaProdutora(produtora) {
           </button>
       </div>
     `;
-
-    // Insere o card no container dos filmes filtrados
     container.insertAdjacentHTML("beforeend", card);
   });
 }
 
-
-
-// Função que redireciona para a página de detalhes do filme
 function verMais(id) {
-  // Envia o utilizador para filme.html com o ID do filme na URL
   window.location.href = `filme.html?id=${id}`;
 }

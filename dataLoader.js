@@ -1,5 +1,5 @@
 function carregarDados() {
-    const cache = sessionStorage.getItem("filmesCache");
+    const cache = localStorage.getItem("filmesCache");
     if (cache) {
         return Promise.resolve(JSON.parse(cache));
     }
@@ -9,7 +9,7 @@ function carregarDados() {
             return res.json();
         })
         .then(data => {
-            sessionStorage.setItem("filmesCache", JSON.stringify(data));
+            localStorage.setItem("filmesCache", JSON.stringify(data));
             return data;
         });
 }

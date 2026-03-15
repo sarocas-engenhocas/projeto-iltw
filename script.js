@@ -2,14 +2,14 @@ let filmesData = [];
 
 const container = document.getElementById("lista-filmes");
 if (container) {
-    container.innerHTML = "<p style='text-align:center;font-size:20px;'>A carregar filmes...</p>";
+    container.innerHTML = "<p class='loading-msg'>A carregar filmes...</p>";
 }
 
 function renderFilmes(lista) {
     if (!container) return;
     container.innerHTML = "";
     if (lista.length === 0) {
-        container.innerHTML = "<p style='text-align:center;font-size:20px;'>Nenhum filme encontrado.</p>";
+        container.innerHTML = "<p class='empty-msg'>Nenhum filme encontrado.</p>";
         return;
     }
     lista.forEach(filme => {
@@ -38,7 +38,7 @@ carregarDados()
   })
   .catch(err => {
       if (container) {
-          container.innerHTML = "<p style='text-align:center;font-size:20px;color:red;'>Erro ao carregar filmes.</p>";
+          container.innerHTML = "<p class='error-msg'>Erro ao carregar filmes.</p>";
       }
       console.error("Erro ao carregar filmes:", err);
   });
@@ -49,17 +49,21 @@ function verMais(id) {
 
 const searchInput = document.getElementById("pesquisa-input");
 if (searchInput) {
+    let debounceTimer;
     searchInput.addEventListener("input", () => {
-        const termo = searchInput.value.toLowerCase().trim();
-        if (!termo) {
-            renderFilmes(filmesData);
-            return;
-        }
-        const filtrados = filmesData.filter(f =>
-            f.titulo.toLowerCase().includes(termo) ||
-            f.genero.toLowerCase().includes(termo) ||
-            f.produtora.toLowerCase().includes(termo)
-        );
-        renderFilmes(filtrados);
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            const termo = searchInput.value.toLowerCase().trim();
+            if (!termo) {
+                renderFilmes(filmesData);
+                return;
+            }
+            const filtrados = filmesData.filter(f =>
+                f.titulo.toLowerCase().includes(termo) ||
+                f.genero.toLowerCase().includes(termo) ||
+                f.produtora.toLowerCase().includes(termo)
+            );
+            renderFilmes(filtrados);
+        }, 300);
     });
 }
