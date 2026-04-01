@@ -31,6 +31,7 @@ function injectHeader() {
         document.getElementById("logout-btn").addEventListener("click", (e) => {
             e.preventDefault();
             localStorage.removeItem("user");
+            localStorage.removeItem("balde");
             location.reload();
         });
     }

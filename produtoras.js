@@ -1,7 +1,5 @@
 let filmes = [];
 const listaProdutoras = document.getElementById("produtoras-lista");
-listaProdutoras.innerHTML = "<p class='loading-msg'>A carregar...</p>";
-
 carregarDados()
   .then(data => {
     filmes = data.filmes;

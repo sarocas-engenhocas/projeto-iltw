@@ -46,6 +46,14 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         const data = await res.json();
         if (res.ok) {
             localStorage.setItem("user", JSON.stringify({ nome: data.nome, email: email.value.trim() }));
+            const localBalde = JSON.parse(localStorage.getItem("balde"));
+            if (localBalde && localBalde.length > 0) {
+                await fetch("/api/balde", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email: email.value.trim(), balde: localBalde })
+                }).catch(() => {});
+            }
             window.location.href = "index.html";
         } else {
             msg.textContent = data.message;

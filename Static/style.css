@@ -274,13 +274,6 @@ footer {
     padding: 10px 0;
 }
 
-.carousel__counter {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-}
-
 .carousel__indicator {
     border: none;
     border-radius: 50%;
@@ -406,9 +399,12 @@ footer {
     margin: 10px;
     background: var(--cor-trailer);
     color: white;
+    border: none;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
+    font-family: inherit;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -665,4 +661,33 @@ select:focus-visible {
     #pesquisa-input {
         width: 90%;
     }
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.pag-btn {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.pag-btn:hover {
+    background: #eee;
+}
+
+.pag-ativo {
+    background: #e63946;
+    color: #fff;
+    border-color: #e63946;
 }

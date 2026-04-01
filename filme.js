@@ -57,6 +57,14 @@ carregarDados()
           if (!balde.includes(id)) {
               balde.push(id);
               localStorage.setItem("balde", JSON.stringify(balde));
+              const user = JSON.parse(localStorage.getItem("user"));
+              if (user && user.email) {
+                  fetch("/api/balde", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({ email: user.email, balde })
+                  }).catch(() => {});
+              }
               mostrarMensagem("Filme adicionado ao balde!");
           } else {
               mostrarMensagem("Este filme já está no balde!");
@@ -69,6 +77,8 @@ carregarDados()
   });
 
 function mostrarMensagem(texto) {
+    const existente = container.querySelector(".balde-msg");
+    if (existente) existente.remove();
     const msg = document.createElement("p");
     msg.textContent = texto;
     msg.className = "balde-msg";

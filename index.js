@@ -27,8 +27,6 @@ if (track) {
     const prevButton = document.querySelector('.carousel__button--left');
     const dotsNav = document.querySelector('.carousel__nav');
     const dots = Array.from(dotsNav.children);
-    const counter = document.querySelector('.carousel__counter');
-
     function recalcSlidePositions() {
         const sw = slides[0].getBoundingClientRect().width;
         slides.forEach((slide, i) => { slide.style.left = sw * i + 'px'; });
@@ -43,16 +41,10 @@ if (track) {
         resizeTimer = setTimeout(recalcSlidePositions, 150);
     });
 
-    function atualizarContador() {
-        const idx = slides.findIndex(s => s.classList.contains('current-slide'));
-        if (counter) counter.textContent = `${idx + 1} / ${slides.length}`;
-    }
-
     const moveToSlide = (track, currentSlide, targetSlide) => {
         track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
         currentSlide.classList.remove('current-slide');
         targetSlide.classList.add('current-slide');
-        atualizarContador();
     };
 
     const updateDots = (currentDot, targetDot) => {
@@ -155,6 +147,5 @@ if (track) {
         else if (e.key === 'ArrowRight') proximoSlide();
     });
 
-    atualizarContador();
     iniciarAutoplay();
 }

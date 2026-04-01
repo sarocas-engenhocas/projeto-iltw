@@ -19,6 +19,7 @@
   "routes": [
     { "src": "/login", "dest": "server.js" },
     { "src": "/register", "dest": "server.js" },
+    { "src": "/api/balde", "dest": "server.js" },
     { "src": "/", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]

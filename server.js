@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const DB_PATH = process.env.DB_PATH || path.join(__dirname, 'users.json');
+const DB_PATH = process.env.DB_PATH || path.join(process.env.NODE_ENV === 'production' ? '/tmp' : __dirname, 'users.json');
 
 function lerUsers() {
     try {
@@ -15,7 +15,9 @@ function lerUsers() {
 }
 
 function guardarUsers(users) {
-    fs.writeFileSync(DB_PATH, JSON.stringify(users, null, 2), 'utf-8');
+    try {
+        fs.writeFileSync(DB_PATH, JSON.stringify(users, null, 2), 'utf-8');
+    } catch {}
 }
 
 app.use(express.json());
@@ -23,31 +25,61 @@ app.use(express.static('Static'));
 app.use(express.static('.'));
 
 app.post('/register', async (req, res) => {
-    const { nome, email, password } = req.body;
-    if (!nome || !email || !password) {
-        return res.status(400).json({ message: 'Todos os campos são obrigatórios.' });
+    try {
+        const { nome, email, password } = req.body;
+        if (!nome || !email || !password) {
+            return res.status(400).json({ message: 'Todos os campos são obrigatórios.' });
+        }
+        const users = lerUsers();
+        if (users.find(u => u.email === email)) {
+            return res.status(409).json({ message: 'Este email já está registado.' });
+        }
+        const hash = await bcrypt.hash(password, 10);
+        users.push({ nome, email, password: hash, balde: [] });
+        guardarUsers(users);
+        res.json({ message: `Conta criada com sucesso, ${nome}!` });
+    } catch {
+        res.status(500).json({ message: 'Erro interno do servidor.' });
     }
-    const users = lerUsers();
-    if (users.find(u => u.email === email)) {
-        return res.status(409).json({ message: 'Este email já está registado.' });
-    }
-    const hash = await bcrypt.hash(password, 10);
-    users.push({ nome, email, password: hash });
-    guardarUsers(users);
-    res.json({ message: `Conta criada com sucesso, ${nome}!` });
 });
 
-app.post('/login', async (req, res) => {
-    const { email, password } = req.body;
-    if (!email || !password) {
-        return res.status(400).json({ message: 'Email e palavra-passe são obrigatórios.' });
+app.get('/api/balde', (req, res) => {
+    const { email } = req.query;
+    if (!email) return res.status(400).json({ message: 'Email é obrigatório.' });
+    const users = lerUsers();
+    const user = users.find(u => u.email === email);
+    if (!user) return res.status(404).json({ message: 'Utilizador não encontrado.' });
+    res.json({ balde: user.balde || [] });
+});
+
+app.post('/api/balde', (req, res) => {
+    const { email, balde } = req.body;
+    if (!email || !Array.isArray(balde)) {
+        return res.status(400).json({ message: 'Email e balde são obrigatórios.' });
     }
     const users = lerUsers();
     const user = users.find(u => u.email === email);
-    if (!user || !(await bcrypt.compare(password, user.password))) {
-        return res.status(401).json({ message: 'Email ou palavra-passe incorretos.' });
+    if (!user) return res.status(404).json({ message: 'Utilizador não encontrado.' });
+    user.balde = balde;
+    guardarUsers(users);
+    res.json({ message: 'Balde atualizado.' });
+});
+
+app.post('/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+        if (!email || !password) {
+            return res.status(400).json({ message: 'Email e palavra-passe são obrigatórios.' });
+        }
+        const users = lerUsers();
+        const user = users.find(u => u.email === email);
+        if (!user || !(await bcrypt.compare(password, user.password))) {
+            return res.status(401).json({ message: 'Email ou palavra-passe incorretos.' });
+        }
+        res.json({ message: `Bem-vindo de volta, ${user.nome}!`, nome: user.nome });
+    } catch {
+        res.status(500).json({ message: 'Erro interno do servidor.' });
     }
-    res.json({ message: `Bem-vindo de volta, ${user.nome}!`, nome: user.nome });
 });
 
 if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') {
