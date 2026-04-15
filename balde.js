@@ -57,7 +57,7 @@ carregarBalde().then(() => {
                 <p><strong>Ano:</strong> ${filme.ano}</p>
                 <p><strong>Género:</strong> ${filme.genero}</p>
                 <p><strong>Produtora:</strong> ${filme.produtora}</p>
-                <p><strong>Rating:</strong> ${filme.rating}</p>
+                <p><strong>Rating:</strong> ${filme.rating} ${starsHtml(filme.rating)}</p>
 
                 <button class="btn-balde" onclick="removerDoBalde(${filme.id})">
                     Remover

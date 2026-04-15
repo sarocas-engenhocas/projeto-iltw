@@ -14,7 +14,7 @@ carregarDados()
             document.getElementById(s.year).textContent = "Ano: " + f.ano;
             document.getElementById(s.genre).textContent = "Género: " + f.genero;
             document.getElementById(s.producer).textContent = "Produtora: " + f.produtora;
-            document.getElementById(s.rating).textContent = "Rating: " + f.rating;
+            document.getElementById(s.rating).innerHTML = "Rating: " + f.rating + " " + starsHtml(f.rating);
             document.getElementById(s.img).src = f.poster;
         });
     })
