@@ -40,11 +40,10 @@ carregarDados()
         </div>
 
         <div class="info">
-            <h1>${filme.titulo}</h1>
             <p><strong>Ano:</strong> ${filme.ano}</p>
             <p><strong>Género:</strong> ${filme.genero}</p>
             <p><strong>Produtora:</strong> ${filme.produtora}</p>
-            <p><strong>Rating:</strong> ${filme.rating} ${starsHtml(filme.rating)}</p>
+            <p><strong>Rating:</strong> ${filme.rating}</p>
             <p><strong>Sinopse:</strong> ${filme.sinopse}</p>
 
             <a href="${trailerURL}" target="_blank" class="btn-trailer">🎬 Ver Trailer</a>
@@ -53,13 +52,7 @@ carregarDados()
 
     </div>
 `;
-      const baldeBtn = document.getElementById("btn-balde");
-      let baldeAtual = JSON.parse(localStorage.getItem("balde")) || [];
-      if (baldeAtual.includes(id)) {
-          baldeBtn.textContent = "✅ No Balde";
-          baldeBtn.style.background = "var(--cor-sucesso, #28a745)";
-      }
-      baldeBtn.addEventListener("click", () => {
+      document.getElementById("btn-balde").addEventListener("click", () => {
           let balde = JSON.parse(localStorage.getItem("balde")) || [];
           if (!balde.includes(id)) {
               balde.push(id);
@@ -72,8 +65,6 @@ carregarDados()
                       body: JSON.stringify({ email: user.email, balde })
                   }).catch(() => {});
               }
-              baldeBtn.textContent = "✅ No Balde";
-              baldeBtn.style.background = "#28a745";
               mostrarMensagem("Filme adicionado ao balde!");
           } else {
               mostrarMensagem("Este filme já está no balde!");

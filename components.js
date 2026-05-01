@@ -1,14 +1,3 @@
-function starsHtml(rating) {
-    if (rating == null || isNaN(rating)) return '';
-    const count = Math.round(Math.min(10, Math.max(0, rating)) / 2);
-    let html = '<span class="stars">';
-    for (let i = 1; i <= 5; i++) {
-        html += `<span class="star${i <= count ? ' filled' : ''}">★</span>`;
-    }
-    html += '</span>';
-    return html;
-}
-
 function injectHeader() {
     const user = JSON.parse(localStorage.getItem("user"));
     let authLinksHtml;
@@ -25,7 +14,6 @@ function injectHeader() {
         <a href="index.html"><img src="Static/pics/PipocaDigitalLogo.png" alt="Logo da PipocaDigital" class="logo" style="height:100px;"></a>
         <div class="botoes">
         <div class="botoes-cima">
-            <button id="modo-toggle" aria-label="Alternar modo escuro/claro">🌙</button>
             ${authLinksHtml}
         </div>
         <div class="botoes-baixo">
@@ -47,35 +35,6 @@ function injectHeader() {
             location.reload();
         });
     }
-
-    const theme = localStorage.getItem("tema") || "claro";
-    if (theme === "escuro") {
-        document.documentElement.setAttribute("data-theme", "dark");
-        const btn = document.getElementById("modo-toggle");
-        if (btn) btn.textContent = "☀️";
-    }
-    document.getElementById("modo-toggle").addEventListener("click", () => {
-        const html = document.documentElement;
-        const btn = document.getElementById("modo-toggle");
-        if (html.getAttribute("data-theme") === "dark") {
-            html.removeAttribute("data-theme");
-            localStorage.setItem("tema", "claro");
-            btn.textContent = "🌙";
-        } else {
-            html.setAttribute("data-theme", "dark");
-            localStorage.setItem("tema", "escuro");
-            btn.textContent = "☀️";
-        }
-    });
-
-    document.body.insertAdjacentHTML("beforeend", '<button id="voltar-topo" aria-label="Voltar ao topo">↑</button>');
-    const topBtn = document.getElementById("voltar-topo");
-    window.addEventListener("scroll", () => {
-        topBtn.style.display = window.scrollY > 400 ? "flex" : "none";
-    });
-    topBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
 }
 
 function injectFooter() {

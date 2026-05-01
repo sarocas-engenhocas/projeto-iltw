@@ -13,28 +13,11 @@
     --cor-fundo-detalhes: #ececec;
     --cor-fundo-head: #f9f9f9;
     --cor-texto-footer: #d4d4d4;
-    --cor-fundo: #ffffff;
-    --cor-texto: #000000;
-    --cor-texto-claro: #333333;
-}
-
-[data-theme="dark"] {
-    --cor-primaria: #0a4b6e;
-    --cor-secundaria: #1d6b8a;
-    --cor-hover: #0d2a4a;
-    --cor-footer: #1a1a1a;
-    --cor-card: #2a2a2a;
-    --cor-fundo-detalhes: #2a2a2a;
-    --cor-fundo-head: #1a1a1a;
-    --cor-texto-footer: #aaa;
-    --cor-fundo: #121212;
-    --cor-texto: #e0e0e0;
-    --cor-texto-claro: #cccccc;
 }
 
 header {
     background-color: var(--cor-primaria);
-    padding: 18px 10px;
+    padding: 10px;
     padding-left: clamp(20px, 5vw, 200px);
     padding-right: clamp(20px, 5vw, 200px);
     height: 100px;
@@ -59,37 +42,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
-    transition: background 0.3s, color 0.3s;
-}
-
-.destaques, .head {
-    background: var(--cor-fundo-head);
-}
-
-.texto-head {
-    color: var(--cor-texto);
-}
-
-.filme-detalhes .info h1,
-.filme-detalhes .info p,
-.filme-detalhes .sinopse {
-    color: var(--cor-texto);
-}
-
-.login-container label {
-    color: var(--cor-texto-claro);
-}
-
-.login-container input {
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
-}
-
-#pesquisa-input {
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
 }
 
 .welcome {
@@ -151,11 +103,6 @@ body {
     margin-top: 5px;
 }
 
-.botoes-baixo {
-    margin-top: auto;
-    padding-bottom: 5px;
-}
-
 .botoes-baixo a:hover,
 .botoes-cima a:hover {
     color: var(--cor-hover);
@@ -169,7 +116,6 @@ body {
 .botoes-cima {
     gap: 10px;
     align-items: center;
-    padding-top: 5px;
 }
 
 .linha {
@@ -643,114 +589,6 @@ select:focus-visible {
     outline-offset: 2px;
 }
 
-.stars {
-    display: inline-flex;
-    gap: 2px;
-    vertical-align: middle;
-}
-
-.star {
-    color: #555;
-    font-size: 1.3em;
-    line-height: 1;
-}
-
-.star.filled {
-    color: #f5c518;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.filme-card,
-.genero-card,
-.produtora-card {
-    animation: fadeInUp 0.4s ease forwards;
-}
-
-#voltar-topo {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: var(--cor-primaria);
-    color: white;
-    border: none;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    transition: 0.3s;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-
-#voltar-topo:hover {
-    background: var(--cor-hover);
-    transform: translateY(-2px);
-}
-
-.sort-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 20px;
-}
-
-.sort-container label {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--cor-texto-claro);
-}
-
-#sort-select {
-    padding: 8px 12px;
-    font-size: 14px;
-    border: 2px solid var(--cor-primaria);
-    border-radius: 25px;
-    outline: none;
-    font-family: 'Montserrat', sans-serif;
-    background: var(--cor-fundo);
-    color: var(--cor-texto);
-    cursor: pointer;
-}
-
-#filme-count {
-    text-align: center;
-    font-size: 14px;
-    color: var(--cor-texto-claro);
-    padding: 5px 20px;
-    margin: 0;
-}
-
-#modo-toggle {
-    background: none;
-    border: 1px solid rgba(255,255,255,0.5);
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    font-family: inherit;
-    transition: 0.2s;
-}
-
-#modo-toggle:hover {
-    background: rgba(255,255,255,0.1);
-}
-
 @media (max-width: 1024px) {
     .filmes-grid {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -769,11 +607,11 @@ select:focus-visible {
 
 @media (max-width: 768px) {
     header {
-        padding: 15px;
+        padding: 10px 15px;
         height: auto;
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: 10px;
     }
 
     .botoes {
@@ -789,12 +627,6 @@ select:focus-visible {
 
     .botoes-cima {
         gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    #modo-toggle {
-        font-size: 12px;
-        padding: 3px 8px;
     }
 
     .imagem-bemvindo {
@@ -995,31 +827,6 @@ select:focus-visible {
     .pag-btn {
         padding: 6px 10px;
         font-size: 12px;
-    }
-
-    .sort-container {
-        flex-direction: column;
-        gap: 5px;
-        padding: 5px 10px;
-    }
-
-    #sort-select {
-        width: 100%;
-        max-width: 300px;
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-
-    #filme-count {
-        font-size: 12px;
-    }
-
-    #voltar-topo {
-        bottom: 15px;
-        right: 15px;
-        width: 38px;
-        height: 38px;
-        font-size: 18px;
     }
 }
 

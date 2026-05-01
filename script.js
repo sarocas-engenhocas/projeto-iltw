@@ -3,6 +3,7 @@ let filmesFiltrados = [];
 let paginaAtual = 1;
 const POR_PAGINA = 16;
 
+
 const container = document.getElementById("lista-filmes");
 const paginacaoEl = document.getElementById("paginacao");
 
@@ -37,7 +38,7 @@ function mostrarPagina() {
         <p><strong>Ano:</strong> ${filme.ano}</p>
         <p><strong>Género:</strong> ${filme.genero}</p>
         <p><strong>Produtora:</strong> ${filme.produtora}</p>
-        <p><strong>Rating:</strong> ${filme.rating} ${starsHtml(filme.rating)}</p>
+        <p><strong>Rating:</strong> ${filme.rating}</p>
 
         <button class="ver-mais" onclick="verMais(${filme.id})">
             Ver mais
