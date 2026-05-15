@@ -15,6 +15,7 @@ function injectHeader() {
         <div class="botoes">
         <div class="botoes-cima">
             ${authLinksHtml}
+            <button id="tema-btn" style="background:none;border:none;cursor:pointer;font-size:18px;padding:0 4px;" aria-label="Alternar modo escuro/claro"></button>
         </div>
         <div class="botoes-baixo">
         <a href="filmes.html">Filmes</a>
@@ -27,6 +28,22 @@ function injectHeader() {
         </div>
     </header>
     `);
+    const tema = localStorage.getItem("tema") || "claro";
+    const btn = document.getElementById("tema-btn");
+    btn.textContent = tema === "escuro" ? "☀️" : "🌙";
+    if (tema === "escuro") document.documentElement.setAttribute("data-theme", "escuro");
+    btn.addEventListener("click", () => {
+        const atual = document.documentElement.getAttribute("data-theme");
+        if (atual === "escuro") {
+            document.documentElement.removeAttribute("data-theme");
+            localStorage.setItem("tema", "claro");
+            btn.textContent = "🌙";
+        } else {
+            document.documentElement.setAttribute("data-theme", "escuro");
+            localStorage.setItem("tema", "escuro");
+            btn.textContent = "☀️";
+        }
+    });
     if (user) {
         document.getElementById("logout-btn").addEventListener("click", (e) => {
             e.preventDefault();
@@ -35,6 +52,15 @@ function injectHeader() {
             location.reload();
         });
     }
+}
+
+function verMais(id) {
+    window.location.href = `filme.html?id=${id}`;
+}
+
+function showError(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
 }
 
 function injectFooter() {

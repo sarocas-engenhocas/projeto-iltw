@@ -93,7 +93,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 35px;
+    gap: 15px;
+    padding-top: 14px;
+    padding-bottom: 10px;
 }
 
 .botoes-baixo,
@@ -101,6 +103,10 @@ body {
     display: flex;
     margin-bottom: 5px;
     margin-top: 5px;
+}
+
+.btn-sobre {
+    font-size: inherit;
 }
 
 .botoes-baixo a:hover,
@@ -175,6 +181,8 @@ footer {
 
 .carousel__image {
     height: 750px;
+    width: auto;
+    max-width: 100%;
     object-fit: contain;
 }
 
@@ -440,12 +448,6 @@ footer {
     margin-top: 0;
 }
 
-.filme-detalhes .sinopse {
-    margin-top: 15px;
-    line-height: 1.6;
-    font-size: 18px;
-}
-
 .loading-msg, .empty-msg {
     text-align: center;
     font-size: 20px;
@@ -539,9 +541,6 @@ footer {
     border-color: #e74c3c;
 }
 
-.login-container input.input-success {
-    border-color: #2ecc71;
-}
 
 .error-message {
     color: #e74c3c;
@@ -605,8 +604,69 @@ select:focus-visible {
     }
 }
 
+[data-theme="escuro"] {
+    --cor-primaria: #0a4a6b;
+    --cor-secundaria: #1a6b8a;
+    --cor-hover: #0d2b4a;
+    --cor-footer: #1a1a2e;
+    --cor-card: #2a2a2a;
+    --cor-fundo-detalhes: #2a2a2a;
+    --cor-fundo-head: #1a1a1a;
+    --cor-texto-footer: #aaa;
+}
+
+[data-theme="escuro"] body {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+[data-theme="escuro"] .login-container input {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+[data-theme="escuro"] .login-container label {
+    color: #ccc;
+}
+
+[data-theme="escuro"] .pag-btn {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+[data-theme="escuro"] .pag-btn:hover {
+    background: #444;
+}
+
+[data-theme="escuro"] .carousel__track-container {
+    background: #2a2a2a;
+}
+
+[data-theme="escuro"] .carousel__caption {
+    color: #e0e0e0;
+}
+
+[data-theme="escuro"] .carousel__button {
+    background: #1a1a1a;
+    border-radius: 4px;
+}
+
+[data-theme="escuro"] .carousel__indicator {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="escuro"] .carousel__indicator.current-slide {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="escuro"] .head {
+    background-color: #1a1a1a;
+}
+
 @media (max-width: 768px) {
-    header {
+header {
         padding: 10px 15px;
         height: auto;
         flex-direction: column;

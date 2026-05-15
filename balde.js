@@ -11,7 +11,10 @@ function carregarBalde() {
     const email = getUserEmail();
     if (email) {
         return fetch(`/api/balde?email=${encodeURIComponent(email)}`)
-            .then(res => res.ok ? res.json() : { balde: [] })
+            .then(res => {
+                if (!res.ok) throw new Error("Servidor indisponivel");
+                return res.json();
+            })
             .then(data => {
                 balde = data.balde || [];
                 localStorage.setItem("balde", JSON.stringify(balde));

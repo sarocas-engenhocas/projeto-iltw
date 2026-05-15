@@ -52,7 +52,13 @@ carregarDados()
 
     </div>
 `;
-      document.getElementById("btn-balde").addEventListener("click", () => {
+      const baldeBtn = document.getElementById("btn-balde");
+      let baldeAtual = JSON.parse(localStorage.getItem("balde")) || [];
+      if (baldeAtual.includes(id)) {
+          baldeBtn.textContent = "✅ No Balde";
+          baldeBtn.style.background = "var(--cor-sucesso, #28a745)";
+      }
+      baldeBtn.addEventListener("click", () => {
           let balde = JSON.parse(localStorage.getItem("balde")) || [];
           if (!balde.includes(id)) {
               balde.push(id);
@@ -65,6 +71,8 @@ carregarDados()
                       body: JSON.stringify({ email: user.email, balde })
                   }).catch(() => {});
               }
+              baldeBtn.textContent = "✅ No Balde";
+              baldeBtn.style.background = "#28a745";
               mostrarMensagem("Filme adicionado ao balde!");
           } else {
               mostrarMensagem("Este filme já está no balde!");

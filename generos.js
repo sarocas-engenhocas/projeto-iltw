@@ -41,6 +41,3 @@ function mostrarFilmesDoGenero(genero) {
   });
 }
 
-function verMais(id) {
-  window.location.href = `filme.html?id=${id}`;
-}

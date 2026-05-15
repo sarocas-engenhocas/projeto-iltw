@@ -7,14 +7,19 @@ const port = process.env.PORT || 3000;
 
 const DB_PATH = process.env.DB_PATH || path.join(process.env.NODE_ENV === 'production' ? '/tmp' : __dirname, 'users.json');
 
+let usersCache = null;
+
 function lerUsers() {
+    if (usersCache) return usersCache;
     try {
         if (!fs.existsSync(DB_PATH)) return [];
-        return JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'));
+        usersCache = JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'));
+        return usersCache;
     } catch { return []; }
 }
 
 function guardarUsers(users) {
+    usersCache = users;
     try {
         fs.writeFileSync(DB_PATH, JSON.stringify(users, null, 2), 'utf-8');
     } catch {}

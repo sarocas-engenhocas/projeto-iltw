@@ -49,7 +49,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     if (!valid) return;
 
     msg.textContent = "A registar...";
-    msg.style.color = "black";
+    msg.style.color = "";
     try {
         const res = await fetch("/register", {
             method: "POST",
@@ -69,7 +69,3 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     }
 });
 
-function showError(id, text) {
-    const el = document.getElementById(id);
-    if (el) { el.textContent = text; }
-}
