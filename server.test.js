@@ -1,16 +1,21 @@
+// server.test.js — Testes da API (Jest + Supertest). Usa ficheiro users.test.json separado, limpo antes e depois.
+
+// Usa ficheiro de base de dados separado para não poluir dados reais
 process.env.DB_PATH = require('path').join(__dirname, 'users.test.json');
 process.env.NODE_ENV = 'test';
 
 const fs = require('fs');
-try { fs.unlinkSync(process.env.DB_PATH); } catch {}
+try { fs.unlinkSync(process.env.DB_PATH); } catch {}  // Limpa antes dos testes
 
 const request = require("supertest");
 const app = require("./server");
 
+// Limpa após todos os testes
 afterAll(() => {
     try { fs.unlinkSync(process.env.DB_PATH); } catch {}
 });
 
+// Testes de registo
 describe("POST /register", () => {
     it("regista um novo utilizador", async () => {
         const res = await request(app)
@@ -40,8 +45,10 @@ describe("POST /register", () => {
     });
 });
 
+// Testes de login
 describe("POST /login", () => {
     it("faz login com credenciais corretas", async () => {
+        // Primeiro regista, depois faz login
         await request(app)
             .post("/register")
             .send({ nome: "LoginTest", email: "login@teste.com", password: "123456" });

@@ -1,26 +1,16 @@
 {
   "version": 2,
   "builds": [
-    { "src": "*.html", "use": "@vercel/static" },
-    { "src": "Static/**/*", "use": "@vercel/static" },
+    { "src": "public/**/*", "use": "@vercel/static" },
     { "src": "Dados/**/*", "use": "@vercel/static" },
-    { "src": "server.js", "use": "@vercel/node" },
-    { "src": "components.js", "use": "@vercel/static" },
-    { "src": "script.js", "use": "@vercel/static" },
-    { "src": "filme.js", "use": "@vercel/static" },
-    { "src": "generos.js", "use": "@vercel/static" },
-    { "src": "produtoras.js", "use": "@vercel/static" },
-    { "src": "balde.js", "use": "@vercel/static" },
-    { "src": "index.js", "use": "@vercel/static" },
-    { "src": "dataLoader.js", "use": "@vercel/static" },
-    { "src": "login.js", "use": "@vercel/static" },
-    { "src": "registar.js", "use": "@vercel/static" }
+    { "src": "server.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/login", "dest": "server.js" },
     { "src": "/register", "dest": "server.js" },
     { "src": "/api/balde", "dest": "server.js" },
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/Dados/(.*)", "dest": "/Dados/$1" },
+    { "src": "/", "dest": "/public/index.html" },
+    { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }

@@ -1,5 +1,9 @@
+// produtoras.js — Página de produtoras. Lista produtoras únicas; ao clicar, mostra filmes dessa produtora.
+
 let filmes = [];
 const listaProdutoras = document.getElementById("produtoras-lista");
+
+// Carrega dados, extrai produtoras únicas com Set, e cria cards clicáveis
 carregarDados()
   .then(data => {
     filmes = data.filmes;
@@ -18,6 +22,7 @@ carregarDados()
       console.error("Erro ao carregar produtoras:", err);
   });
 
+// Filtra filmes pela produtora clicada e renderiza cards abaixo
 function mostrarFilmesDaProdutora(produtora) {
   const container = document.getElementById("filmes-produtora");
   container.innerHTML = "";

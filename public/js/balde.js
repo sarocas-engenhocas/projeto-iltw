@@ -1,12 +1,16 @@
-let balde = [];
+// balde.js — Bucket pessoal: adicionar/remover filmes, sincronizado com servidor (se logado) ou localStorage (fallback).
+
+let balde = [];  // array de IDs dos filmes no balde
 const container = document.getElementById("balde-container");
 let user;
 try { user = JSON.parse(localStorage.getItem("user")); } catch { user = null; }
 
+// Devolve email do utilizador logado, ou null se anónimo
 function getUserEmail() {
     return user ? user.email : null;
 }
 
+// Carrega o balde: do servidor se logado, com fallback a localStorage
 function carregarBalde() {
     const email = getUserEmail();
     if (email) {
@@ -21,14 +25,17 @@ function carregarBalde() {
                 return balde;
             })
             .catch(() => {
+                // Fallback: se servidor falhar, usa localStorage
                 balde = JSON.parse(localStorage.getItem("balde")) || [];
                 return balde;
             });
     }
+    // Anónimo: usa apenas localStorage
     balde = JSON.parse(localStorage.getItem("balde")) || [];
     return Promise.resolve(balde);
 }
 
+// Guarda o balde: sempre em localStorage; também no servidor se logado
 function guardarBalde() {
     localStorage.setItem("balde", JSON.stringify(balde));
     const email = getUserEmail();
@@ -37,10 +44,13 @@ function guardarBalde() {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, balde })
-        }).catch(() => {});
+        }).catch(() => {});  // falha silenciosa (offline, etc.)
     }
 }
 
+container.innerHTML = "<div class='skeleton-grid'><div class='skeleton-card'><div class='skeleton-img'></div><div class='skeleton-line'></div><div class='skeleton-line'></div><div class='skeleton-line'></div><div class='skeleton-line'></div></div></div>";
+
+// No load da página: carrega balde e filmes, depois renderiza os cards
 carregarBalde().then(() => {
     carregarDados()
       .then(data => {
@@ -52,6 +62,8 @@ carregarBalde().then(() => {
           return;
         }
 
+        container.innerHTML = "";
+
         filmesNoBalde.forEach(filme => {
           const card = `
             <div class="filme-card">
@@ -62,7 +74,7 @@ carregarBalde().then(() => {
                 <p><strong>Produtora:</strong> ${filme.produtora}</p>
                 <p><strong>Rating:</strong> ${filme.rating}</p>
 
-                <button class="btn-balde" onclick="removerDoBalde(${filme.id})">
+                <button class="btn-balde" data-id="${filme.id}" onclick="removerDoBalde(${filme.id})">
                     Remover
                 </button>
             </div>
@@ -76,10 +88,12 @@ carregarBalde().then(() => {
       });
 });
 
+// Remove um filme do balde pelo ID: atualiza array, guarda, remove DOM, mostra mensagem se vazio
 function removerDoBalde(id) {
   balde = balde.filter(filmeId => filmeId !== id);
   guardarBalde();
-  const card = document.querySelector(`.filme-card .btn-balde[onclick*="(${id})"]`);
+  // Seleciona o card pelo onclick que contém o ID
+  const card = document.querySelector(`.filme-card .btn-balde[data-id="${id}"]`);
   if (card) card.closest(".filme-card").remove();
   if (container.children.length === 0) {
     container.innerHTML = "<p>O balde está vazio.</p>";

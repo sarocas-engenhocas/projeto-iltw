@@ -1,5 +1,9 @@
+// generos.js — Página de géneros. Lista géneros únicos; ao clicar, mostra filmes desse género.
+
 let filmes = [];
 const listaGeneros = document.getElementById("generos-lista");
+
+// Carrega dados, extrai géneros únicos com Set, e cria cards clicáveis
 carregarDados()
   .then(data => {
     filmes = data.filmes;
@@ -18,6 +22,7 @@ carregarDados()
       console.error("Erro ao carregar géneros:", err);
   });
 
+// Filtra filmes pelo género clicado e renderiza cards abaixo
 function mostrarFilmesDoGenero(genero) {
   const container = document.getElementById("filmes-genero");
   container.innerHTML = "";

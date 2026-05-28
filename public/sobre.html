@@ -1,0 +1,35 @@
+<!-- sobre.html — Informações sobre o projeto PipocaDigital -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre o projeto PipocaDigital - catálogo de filmes desenvolvido no âmbito da unidade curricular ILTW.">
+    <meta name="keywords" content="sobre, pipocadigital, projeto, iltw, filmes">
+    <title>Sobre - PipocaDigital</title>
+    <link rel="icon" href="/pics/PipocaDigitalLogo.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="/js/components.js"></script>
+    <script>injectHeader();</script>
+
+    <main id="main-content">
+    <div class="head">
+            <h1><span class="linha">—</span>SOBRE<span class="linha">—</span></h1>
+    </div>
+
+    <div class="texto-head">
+        <p>O PipocaDigital é um catálogo de filmes online desenvolvido no âmbito da unidade curricular Introdução às Linguagens e Tecnologias Web (ILTW). A plataforma permite explorar títulos, produtoras e géneros de forma simples e intuitiva, com uma experiência responsiva e moderna.</p>
+        <p>O front-end foi construído com HTML5 e CSS3, com especial foco em Flexbox e design responsivo para garantir compatibilidade com dispositivos móveis. A camada interativa, em JavaScript, oferece pesquisa, ordenação, paginação dinâmica e navegação por categorias.</p>
+        <p>Os dados dos filmes são carregados através da função fetch() a partir de um ficheiro JSON (filmes.json), simulando a interação com uma API real e reforçando a separação entre interface e dados.</p>
+        <p>O back-end, desenvolvido em Node.js com Express, trata da autenticação de utilizadores (registo e login) e da gestão de uma lista personalizada de favoritos — o "Balde". Os dados são persistidos num ficheiro JSON no servidor.</p>
+        <p>O resultado é um website funcional, organizado e visualmente apelativo, que cumpre os objetivos da disciplina e aplica os conhecimentos adquiridos ao longo do semestre.</p>
+    </div>
+    </main>
+
+    <script>injectFooter();</script>
+    
+</body>
+</html>

@@ -1,13 +1,15 @@
+// filme.js — Página de detalhes de um filme. Lê o ID da query string, mostra poster/info/trailer e permite adicionar ao balde.
+
 const params = new URLSearchParams(window.location.search);
 const container = document.getElementById("filme-container");
 const hero = document.getElementById("trailer-hero");
 
-const id = parseInt(params.get("id"));
+const id = parseInt(params.get("id"));  // lê ?id= da URL
 if (isNaN(id)) {
     container.innerHTML = "<p class='error-msg'>ID de filme inválido.</p>";
     throw new Error("ID inválido");
 }
-container.innerHTML = "<p class='loading-msg'>A carregar...</p>";
+container.innerHTML = "<div class='skeleton-card' style='max-width:600px;margin:40px auto;'><div class='skeleton-img' style='height:400px;'></div><div class='skeleton-line'></div><div class='skeleton-line'></div><div class='skeleton-line'></div><div class='skeleton-line'></div></div>";
 
 carregarDados()
   .then(data => {
@@ -18,6 +20,9 @@ carregarDados()
           return;
       }
 
+      document.title = filme.titulo + " — PipocaDigital";
+
+      // Hero com poster como background + overlay escuro + info sobreposta
       if (hero) {
           hero.style.backgroundImage = `url(${filme.poster})`;
           hero.innerHTML = `
@@ -29,9 +34,11 @@ carregarDados()
         `;
       }
 
+      // Link para pesquisa no YouTube (trailer do filme)
       const searchQuery = encodeURIComponent(filme.titulo + " " + filme.ano + " trailer");
       const trailerURL = `https://www.youtube.com/results?search_query=${searchQuery}`;
 
+      // Renderiza detalhes: poster à esquerda, info à direita
       container.innerHTML = `
     <div class="filme-detalhes">
 
@@ -52,12 +59,16 @@ carregarDados()
 
     </div>
 `;
+
+      // Estado do botão "Adicionar ao Balde": se já estiver no balde, mostra "✅ No Balde"
       const baldeBtn = document.getElementById("btn-balde");
       let baldeAtual = JSON.parse(localStorage.getItem("balde")) || [];
       if (baldeAtual.includes(id)) {
           baldeBtn.textContent = "✅ No Balde";
           baldeBtn.style.background = "var(--cor-sucesso, #28a745)";
       }
+
+      // Ao clicar: adiciona ao balde (localStorage + servidor se logado)
       baldeBtn.addEventListener("click", () => {
           let balde = JSON.parse(localStorage.getItem("balde")) || [];
           if (!balde.includes(id)) {
@@ -65,6 +76,7 @@ carregarDados()
               localStorage.setItem("balde", JSON.stringify(balde));
               const user = JSON.parse(localStorage.getItem("user"));
               if (user && user.email) {
+                  // Sincroniza com servidor
                   fetch("/api/balde", {
                       method: "POST",
                       headers: { "Content-Type": "application/json" },
@@ -84,6 +96,7 @@ carregarDados()
       console.error("Erro ao carregar detalhes do filme:", err);
   });
 
+// Mostra mensagem temporária (2s) no container
 function mostrarMensagem(texto) {
     const existente = container.querySelector(".balde-msg");
     if (existente) existente.remove();

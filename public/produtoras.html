@@ -1,0 +1,36 @@
+<!-- produtoras.html — Navegação de filmes por produtora -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore filmes por produtora - PipocaDigital. Navegue por produtoras como Marvel, DC, Disney e mais.">
+    <meta name="keywords" content="produtoras, filmes, marvel, dc, disney, pipocadigital">
+    <title>Produtoras - PipocaDigital</title>
+    <link rel="icon" href="/pics/PipocaDigitalLogo.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="/js/components.js"></script>
+    <script>injectHeader();</script>
+
+
+    <div class="head">
+            <h1><span class="linha">—</span>PRODUTORAS<span class="linha">—</span></h1>
+    </div>
+
+<main id="main-content">
+    <!-- Quadrados das produtoras -->
+    <div id="produtoras-lista" class="generos-grid"></div>
+
+    <!-- Filmes filtrados -->
+    <div id="filmes-produtora" class="filmes-grid"></div>
+</main>
+
+    <script>injectFooter();</script>
+    
+<script src="/js/dataLoader.js"></script>
+<script src="/js/produtoras.js"></script>
+</body>
+</html>

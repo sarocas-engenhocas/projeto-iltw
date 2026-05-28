@@ -1,3 +1,5 @@
+// registar.js — Formulário de registo com validação (nome, email, password, confirmação).
+
 document.getElementById("registerForm").addEventListener("submit", async (e) => {
     e.preventDefault();
     const nome = document.getElementById("nome");
@@ -7,15 +9,18 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     const msg = document.getElementById("message");
     let valid = true;
 
+    // Limpa erros anteriores
     document.querySelectorAll("#registerForm input").forEach(inp => inp.classList.remove("input-error"));
     document.querySelectorAll(".error-message").forEach(el => el.textContent = "");
 
+    // Valida nome (obrigatório)
     if (!nome.value.trim()) {
         nome.classList.add("input-error");
         showError("nome-error", "O nome é obrigatório.");
         valid = false;
     }
 
+    // Valida email (obrigatório + formato)
     if (!email.value.trim()) {
         email.classList.add("input-error");
         showError("email-error", "O email é obrigatório.");
@@ -26,6 +31,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
         valid = false;
     }
 
+    // Valida password (obrigatória + mínimo 6 caracteres)
     if (!password.value) {
         password.classList.add("input-error");
         showError("password-error", "A palavra-passe é obrigatória.");
@@ -36,6 +42,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
         valid = false;
     }
 
+    // Valida confirmação (obrigatória + coincidir com password)
     if (!confirmPassword.value) {
         confirmPassword.classList.add("input-error");
         showError("confirm-password-error", "Confirme a palavra-passe.");
@@ -49,7 +56,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     if (!valid) return;
 
     msg.textContent = "A registar...";
-    msg.style.color = "";
+    msg.style.color = "";  // cor herdada do tema
     try {
         const res = await fetch("/register", {
             method: "POST",
@@ -58,7 +65,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
         });
         const data = await res.json();
         if (res.ok) {
-            window.location.href = "login.html";
+            window.location.href = "login.html";  // redireciona para login após registo bem-sucedido
         } else {
             msg.textContent = data.message;
             msg.style.color = "red";

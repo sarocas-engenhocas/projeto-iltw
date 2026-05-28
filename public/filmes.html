@@ -1,0 +1,48 @@
+<!-- filmes.html — Lista completa de filmes com pesquisa e paginação (16 por página) -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista completa de filmes - PipocaDigital. Pesquise e descubra filmes por título, género ou produtora.">
+    <meta name="keywords" content="filmes, lista, catálogo, pesquisa, pipocadigital">
+    <title>Filmes - PipocaDigital</title>
+    <link rel="icon" href="/pics/PipocaDigitalLogo.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="/js/components.js"></script>
+    <script>injectHeader();</script>
+
+    <div id="main-content" class="head">
+            <h1><span class="linha">—</span>FILMES<span class="linha">—</span></h1>
+    </div>
+
+    <div class="pesquisa-container">
+        <input type="text" id="pesquisa-input" placeholder="Pesquisar filmes por título, género ou produtora...">
+    </div>
+
+    <div class="sort-container">
+        <select id="sort-select">
+            <option value="rating-desc">Rating (maior→menor)</option>
+            <option value="rating-asc">Rating (menor→maior)</option>
+            <option value="ano-desc">Ano (recente→antigo)</option>
+            <option value="ano-asc">Ano (antigo→recente)</option>
+            <option value="titulo-asc">Título (A→Z)</option>
+            <option value="titulo-desc">Título (Z→A)</option>
+        </select>
+    </div>
+
+    <div id="lista-filmes" class="filmes-grid">
+
+    </div>
+
+    <div id="paginacao" class="paginacao"></div>
+
+    <script>injectFooter();</script>
+    <script src="/js/dataLoader.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
+

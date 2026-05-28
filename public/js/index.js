@@ -1,5 +1,8 @@
+// index.js — Carrossel de destaques (top 3 ratings). Navegação por botões, teclado, toque e autoplay (4s). Pausa ao hover.
+
 let filmesCarrossel = [];
 
+// Carrega dados e preenche os 3 slides com os filmes mais bem avaliados
 carregarDados()
     .then(data => {
         filmesCarrossel = [...data.filmes].sort((a, b) => b.rating - a.rating).slice(0, 3);
@@ -27,6 +30,8 @@ if (track) {
     const prevButton = document.querySelector('.carousel__button--left');
     const dotsNav = document.querySelector('.carousel__nav');
     const dots = Array.from(dotsNav.children);
+
+    // Recalcula posições dos slides (largura dinâmica)
     function recalcSlidePositions() {
         const sw = slides[0].getBoundingClientRect().width;
         slides.forEach((slide, i) => { slide.style.left = sw * i + 'px'; });
@@ -35,18 +40,21 @@ if (track) {
     }
     recalcSlidePositions();
 
+    // Recalcula posições ao redimensionar janela (com debounce)
     let resizeTimer;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(recalcSlidePositions, 150);
     });
 
+    // Move o track para o slide alvo
     const moveToSlide = (track, currentSlide, targetSlide) => {
         track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
         currentSlide.classList.remove('current-slide');
         targetSlide.classList.add('current-slide');
     };
 
+    // Atualiza indicadores (dots) com aria-current para acessibilidade
     const updateDots = (currentDot, targetDot) => {
         currentDot.classList.remove('current-slide');
         currentDot.removeAttribute('aria-current');
@@ -54,6 +62,7 @@ if (track) {
         targetDot.setAttribute('aria-current', 'true');
     };
 
+    // Esconde/mostra setas nas extremidades
     const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
         if (targetIndex === 0) {
             prevButton.classList.add('is-hidden');
@@ -67,6 +76,7 @@ if (track) {
         }
     };
 
+    // Navega para um slide específico pelo índice
     function irParaSlide(index) {
         const currentSlide = track.querySelector('.current-slide');
         const currentDot = dotsNav.querySelector('.current-slide');
@@ -78,6 +88,7 @@ if (track) {
         hideShowArrows(slides, prevButton, nextButton, index);
     }
 
+    // Próximo slide (com wrap-around)
     function proximoSlide() {
         const current = track.querySelector('.current-slide');
         const idx = slides.indexOf(current);
@@ -88,6 +99,7 @@ if (track) {
         }
     }
 
+    // Slide anterior (com wrap-around)
     function slideAnterior() {
         const current = track.querySelector('.current-slide');
         const idx = slides.indexOf(current);
@@ -98,9 +110,11 @@ if (track) {
         }
     }
 
+    // Event listeners: setas
     prevButton.addEventListener('click', slideAnterior);
     nextButton.addEventListener('click', proximoSlide);
 
+    // Clique no slide → navega para página de detalhes
     slides.forEach((slide, i) => {
         slide.addEventListener('click', () => {
             if (filmesCarrossel[i]) {
@@ -109,6 +123,7 @@ if (track) {
         });
     });
 
+    // Clique nos dots (indicadores)
     dotsNav.addEventListener('click', e => {
         const targetDot = e.target.closest('button');
         if (!targetDot) return;
@@ -116,13 +131,14 @@ if (track) {
         irParaSlide(targetIndex);
     });
 
+    // Suporte a swipe tátil
     let touchStartX = 0;
     track.addEventListener('touchstart', e => {
         touchStartX = e.changedTouches[0].screenX;
     }, { passive: true });
     track.addEventListener('touchend', e => {
         const diff = touchStartX - e.changedTouches[0].screenX;
-        if (Math.abs(diff) < 50) return;
+        if (Math.abs(diff) < 50) return;  // ignora toques pequenos
         if (diff > 0) {
             proximoSlide();
         } else {
@@ -130,6 +146,7 @@ if (track) {
         }
     }, { passive: true });
 
+    // Autoplay (4s) com pausa ao hover
     let autoplayTimer;
     function iniciarAutoplay() {
         pararAutoplay();
@@ -142,6 +159,7 @@ if (track) {
     carousel.addEventListener('mouseenter', pararAutoplay);
     carousel.addEventListener('mouseleave', iniciarAutoplay);
 
+    // Navegação por teclado (setas esquerda/direita)
     document.addEventListener('keydown', e => {
         if (e.key === 'ArrowLeft') slideAnterior();
         else if (e.key === 'ArrowRight') proximoSlide();

@@ -1,10 +1,13 @@
+// login.js — Formulário de login com validação. Sincroniza balde localStorage → servidor após login bem-sucedido.
+
 document.getElementById("loginForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
+    e.preventDefault();  // Evita recarregar página
     const email = document.getElementById("email");
     const password = document.getElementById("password");
     const msg = document.getElementById("message");
     let valid = true;
 
+    // Limpa erros anteriores
     email.classList.remove("input-error");
     password.classList.remove("input-error");
 
@@ -13,6 +16,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     if (emailErr) emailErr.textContent = "";
     if (passErr) passErr.textContent = "";
 
+    // Valida email (obrigatório + formato)
     if (!email.value.trim()) {
         email.classList.add("input-error");
         showError("email-error", "O email é obrigatório.");
@@ -23,6 +27,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         valid = false;
     }
 
+    // Valida password (obrigatória + mínimo 6 caracteres)
     if (!password.value) {
         password.classList.add("input-error");
         showError("password-error", "A palavra-passe é obrigatória.");
@@ -36,7 +41,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     if (!valid) return;
 
     msg.textContent = "A autenticar...";
-    msg.style.color = "";
+    msg.style.color = "";  // cor herdada do tema (não forçar preto)
     try {
         const res = await fetch("/login", {
             method: "POST",
@@ -45,7 +50,9 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         });
         const data = await res.json();
         if (res.ok) {
+            // Guarda dados do utilizador no localStorage
             localStorage.setItem("user", JSON.stringify({ nome: data.nome, email: email.value.trim() }));
+            // Sincroniza balde local (anónimo) com o servidor
             const localBalde = JSON.parse(localStorage.getItem("balde"));
             if (localBalde && localBalde.length > 0) {
                 await fetch("/api/balde", {
